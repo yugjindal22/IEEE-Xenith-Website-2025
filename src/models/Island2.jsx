@@ -216,7 +216,7 @@ export function Island2({
 
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-        console.log(normalizedRotation);
+        // console.log(normalizedRotation);
 
       // Set the current stage based on the island's orientation
       switch (true) {

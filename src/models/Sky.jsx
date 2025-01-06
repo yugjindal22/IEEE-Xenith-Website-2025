@@ -26,7 +26,9 @@ export function Sky({ isRotating, ...props }) {
           receiveShadow
           geometry={nodes.Sphere__0.geometry}
           material={materials['Scene_-_Root']}
-          rotation={[-Math.PI / 2.2, 0, 0.6]}
+          // rotation={[-Math.PI / 2.2, 0, 0.6]}
+          rotation={[-Math.PI / 2.5, 0, 3]}
+
           scale={50000}
         />
       </group>

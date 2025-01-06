@@ -1,4 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
+import { useProgress } from "@react-three/drei";
 import * as THREE from 'three';
 import { Suspense, useEffect, useRef, useState } from "react";
 
@@ -64,8 +65,32 @@ const createSnowParticles = () => {
 
 const snowParticles = createSnowParticles(); // Create snow particles once
 
+const LoadingButton = ({ onStart, isModelLoaded }) => {
+  const { progress } = useProgress();
+  
+  return (
+    <button 
+      onClick={() => isModelLoaded && onStart()}
+      className={`px-6 py-3 bg-blue-600 rounded-lg relative overflow-hidden transition-colors
+        ${isModelLoaded ? 'hover:bg-blue-700' : 'cursor-not-allowed opacity-70'}`}
+      disabled={!isModelLoaded}
+    >
+      <div className="relative z-10">
+        {isModelLoaded ? 'Explore The World of Xenith' : 'Loading...'}
+      </div>
+      {!isModelLoaded && (
+        <div 
+          className="absolute left-0 bottom-0 h-full bg-blue-400 transition-all duration-300"
+          style={{ width: `${progress}%` }}
+        />
+      )}
+    </button>
+  );
+};
+
 const Home = () => {
   const [hasStarted, setHasStarted] = useState(false);
+  const [isModelLoaded, setIsModelLoaded] = useState(false);
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
@@ -89,8 +114,8 @@ const Home = () => {
 
     // If screen width is less than 768px, adjust the scale and position
     if (window.innerWidth < 768) {
-      screenScale = [0.0005, 0.0005, 0.0005];
-      screenPosition = [0, 6.5, 6];
+      screenScale = [0.002, 0.002, 0.002];      // Increased scale for mobile
+      screenPosition = [0, -1, 0];            // Adjusted position to be more visible
     } else {
       screenScale = [0.005, 0.005, 0.005];
       screenPosition = [0, -2, -4];
@@ -103,7 +128,7 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [45, 45, 45];  // increased from [0.9, 0.9, 0.9]
+      screenScale = [35, 35, 35];  // increased from [0.9, 0.9, 0.9]
       screenPosition = [0, -6.5, -43.4];
     } else {
       screenScale = [65, 65, 65];  // increased from [1, 1, 1]
@@ -137,19 +162,29 @@ const Home = () => {
     return <primitive object={particles.current} />;
   };
 
+  const LoadingManager = () => {
+    const { progress } = useProgress();
+    
+    useEffect(() => {
+      if (progress === 100) {
+        setIsModelLoaded(true);
+      }
+    }, [progress]);
+
+    return null;
+  };
+
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
     <section className='w-full h-screen relative'>
       <div className={`absolute inset-0 flex flex-col items-center justify-center bg-black text-white z-20 transition-opacity duration-500 ${hasStarted ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <h1 className="text-4xl font-bold mb-6">Some Yapping About Xenith.....</h1>
-        <button 
-          onClick={() => setHasStarted(true)}
-          className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Explore The World of Xenith
-        </button>
+        <h1 className="text-2xl md:text-4xl font-bold mb-6 px-4 text-center">Some Yapping About Xenith.....</h1>
+        <LoadingButton 
+          onStart={() => setHasStarted(true)} 
+          isModelLoaded={isModelLoaded}
+        />
       </div>
 
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
@@ -162,6 +197,7 @@ const Home = () => {
         }`}
         camera={{ near: 0.1, far: 1000 }}
       >
+        <LoadingManager />
         <Bird />
         <Plane
             isRotating={isRotating}
