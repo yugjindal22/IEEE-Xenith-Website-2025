@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Snowice';
+  src: local('Snowice'), url(./../fonts/SNOWICE.ttf) format('truetype');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root{
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  display: block;
+  width: 100vw;
+  background-color: #022d55;
+}
+
+.toppart {
+  background-image: url("./../assets/images/icetopbg.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2px;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+.events-heading {
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  font-family: 'Haettenschweiler';
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  font-family: "Snowice", sans-serif;
+  text-shadow: 4px 4px 7px #4adfe7;
+  position: relative;
+  padding-top: 90px;
+}
+
+.content {
+  background-color: #022d55;
+  width: 100%;
+}
+
+.bottompart {
+  background-image: url("./../assets/images/icebottombg.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 19vh;
+  background-color: #022d55;
+  position: fixed;
+  bottom: 0;
+  background-position: bottom;
+  z-index: 0;
+}
+
+.mainbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #022d55;
+  gap: 60px;
+  margin-inline: 100px;
+  padding-bottom: 40px;
+}
+
+.box {
+  height: 350px;
+  width: 300px;
+  background-color: #458cb9;
+  border-radius: 25px;
+  box-shadow: 7px 7px lightblue;
+  filter: drop-shadow(0px 0px 8px rgb(166, 217, 235));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s ease, filter 0.8s ease;  /* Smoother transition on hover off */
+  transform-origin: 50% 65%;
+  z-index: 1;
+}
+
+.poster {
+  height: 260px;
+  width: 260px;
+  transition: all 0.8s ease;  /* Smooth resizing and filtering */
+  border-radius: 10px;
+}
+
+.box {
+  position: relative;
+}
+
+.event-button {
+  width: 80px;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.box:hover {
+  transform: scale(1.1);  /* Slight scale for the box */
+  filter: brightness(110%);
+  filter: drop-shadow(0px 0px 14px rgb(29, 138, 178));
+}
+
+.box:hover > .poster {
+  height: 220px;
+  width: 220px;
+  filter: brightness(120%);
+}
+
+.box > h2,
+.box > h3,
+.box > button {
+  visibility: hidden;
+  opacity: 0;
+  font-family: 'Poppins';
+  transition: visibility 0s, opacity 1.5s linear;
+}
+
+.poster-title {
+  font-style: italic;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.poster-date {
+  font-weight: 600;
+  font-family: 'Poppins';
+  margin-top: -5px;
+}
+
+.box:hover > h2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box:hover > h3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box:hover > button {
+  visibility: visible;
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: 2; /* Ensure it appears above the poster */
+  transition: opacity 0.8s ease;
+  filter:brightness(90%);
+  opacity:0.96;
+  
+}
+
+
+
+.box:hover .overlay{
+  opacity: 0;
+  pointer-events: none; /* Ensures you can interact with elements beneath the overlay */
+}
+
+ /* .poster {
+  position: relative;
+  z-index: 1;  
+  transition: transform 0.5s ease;
+}  */
+
+.box {
+  position: relative;
+  overflow: hidden; /* Ensures the overlay stays confined within the box */
+}
+
+@media (max-width: 560px) {
+  .toppart {
+    background-repeat: no-repeat; /* Prevent repeating */
+  }
+  .bottompart {
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 500px) {
+  .events-heading {
+    font-size: 3rem; /* Reduce the heading size */
+  }
+
+  .mainbox {
+    margin-inline: 10px; /* Reduce margins */
+    gap: 40px; /* Reduce gap between boxes */
+  }
+
+  .box {
+    height: 280px; /* Reduce box height */
+    width: 240px; /* Reduce box width */
+    position: relative; /* Necessary for proper overlay alignment */
+    overflow: hidden; /* Prevent content overflow during hover effects */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+
+  .box:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+
+  .poster {
+    height: 100%; /* Fill the box height */
+    width: 100%; /* Fill the box width */
+    border-radius: 10px; /* Add rounded corners for consistency */
+    object-fit: cover; /* Ensure the image scales correctly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+
+  .box:hover .poster {
+    width:80%;
+    height:80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Add subtle shadow on hover */
+    margin-top: 5px;
+  }
+
+  .overlay {
+    position: absolute; /* Position overlay on top of the poster */
+    top: 0; /* Align to the top of the box */
+    left: 0; /* Align to the left of the box */
+    height: 100%; /* Match poster height */
+    width: 100%; /* Match poster width */
+    border-radius: 10px; /* Ensure overlay corners match poster */
+    background: rgba(255, 255, 255, 0.3); /* Apply a frosted glass effect */
+    backdrop-filter: blur(8px); /* Optional: Add blur for a frozen effect */
+    z-index: 1; /* Ensure it appears on top of the poster */
+    pointer-events: none; /* Prevent overlay from blocking hover events */
+  }
+
+  button {
+    width: 70px; /* Adjust button size */
+    height: 25px;
+    font-size: 0.8rem; /* Smaller font size */
+    z-index: 2; /* Ensure buttons are above overlay */
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Adjust text size */
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
