@@ -23,7 +23,7 @@
 }
 
 .bgtop{
-  background-image: url("./../assets/images/bg8.png");
+  background-image: url("./../assets/images/gallerybg8.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -95,36 +95,6 @@
   border-radius: 8px; 
 }
 
-.slider-controler {
-  position: absolute;
-  top: 90%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; 
-  z-index: 10;
-}
-
-.slider-controler div {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.slider-controler div:hover {
-  border-color: rgba(0, 0, 0, 0.3); 
-  background-color: rgba(255, 255, 255, 1);
-}
 
 @media (max-width: 640px) {
   .slider-controler{
