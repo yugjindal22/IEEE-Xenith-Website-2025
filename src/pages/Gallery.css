@@ -1,0 +1,249 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root{
+  overflow-y: hidden;
+  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+  
+}
+.gallery-container {
+  overflow: hidden;
+  position: relative;
+ height: 100vh;
+}
+
+.bgtop{
+  background-image: url("./../assets/images/bg8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.events-heading {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Snowice", sans-serif;
+  text-shadow: 5px 5px 8px #556fcb;
+  margin-bottom: 10px;
+  position: absolute; 
+  top: 73%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  padding: 5px;
+}
+
+.slider-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.slider-box:hover img {
+  transform: scale(1.1); 
+}
+
+.slider-box {
+  width: 550px; 
+  height: 300px; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 10px;
+  
+  border: 1px solid transparent; 
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8), 
+              0 0 20px 10px rgba(255, 255, 255, 0.6); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.slider-box:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 1), 
+              0 0 40px 15px rgba(255, 255, 255, 0.9);
+}
+
+.slider-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+.slider-controler {
+  position: absolute;
+  top: 90%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  z-index: 10;
+}
+
+.slider-controler div {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider-controler div:hover {
+  border-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 640px) {
+  .slider-controler{
+    top:70%;
+  }
+  .events-heading {
+    top:75%;
+  }
+
+  .slider-box {
+    width: 70%; 
+    height: 200px; 
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 35%;
+  }
+ 
+  body:has(.gallery-container){
+   
+    background-position: top;
+    margin-top: 200px;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  } 
+}
+  
+  #snowfall {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .snow {
+    position: absolute;
+    border-radius:50%;
+    filter: blur(1px);
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    top:-1000px;
+    box-shadow: 20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff;
+    animation: snowfall 20s linear infinite;
+  }
+  
+  .snow:before {
+    content:"";
+    width:7px;
+    height:7px;
+    position: absolute;
+    background-color: #fff;
+    left: 200px;
+    top:-150px;
+    border-radius:50%;
+    box-shadow:20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff;
+    
+  }
+  
+  .snow:after {
+    content:"";
+    width:5px;
+    height:5px;
+    position: absolute;
+    background-color: #fff;
+    left: 300px;
+    top:-250px;
+    border-radius:50%;
+    filter: blur(1px);
+    box-shadow: 20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff;
+  }
+  .snow1 {
+    position: absolute;
+    border-radius:50%;
+    filter: blur(2px);
+    background-color: #fff;
+    width: 9px;
+    height: 9px;
+    top:-850px;
+    left:123px;
+    box-shadow: 20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff,860px 40px 1px #fff, 760px 140px 1px #fff, 1260px 120px 1px #fff, 1460px 10px 1px #fff,1560px 30px 1px #fff, 1590px 124px 1px #fff, 1680px 415px 1px #fff, 1720px 335px 1px #fff,1000px 212px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff, 635px 15px 1px #fff, 554px 111px 1px #fff, 455px 222px 1px #fff, 125px 105px 1px #fff, 275px 96px 1px #fff, 245px 40px 1px #fff, 230px 70px 1px #fff, 285px 17px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 430px 210px 1px #fff, 523px 23px 1px #fff, 1650px 335px 1px #fff, 1777px 123px 1px #fff, 1800px 222px 1px #fff, 1360px 140px 1px #fff;
+    animation-delay:-3s;
+    animation: snowfall 25s linear infinite;
+  }
+  
+  .snow1:before {
+    content:"";
+    width:7px;
+    height:7px;
+    position: absolute;
+    background-color: #fff;
+    left: 200px;
+    top:-350px;
+    border-radius:50%;
+    box-shadow: 20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff,860px 40px 1px #fff, 760px 140px 1px #fff, 1260px 120px 1px #fff, 1460px 10px 1px #fff,1560px 30px 1px #fff, 1590px 124px 1px #fff, 1680px 415px 1px #fff, 1720px 335px 1px #fff,1000px 212px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff, 635px 15px 1px #fff, 554px 111px 1px #fff, 455px 222px 1px #fff, 125px 105px 1px #fff, 275px 96px 1px #fff, 245px 40px 1px #fff, 230px 70px 1px #fff, 285px 17px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 430px 210px 1px #fff, 523px 23px 1px #fff, 1650px 335px 1px #fff, 1777px 123px 1px #fff, 1800px 222px 1px #fff, 1360px 140px 1px #fff;
+    
+  }
+  
+  .snow1:after {
+    content:"";
+    width:5px;
+    height:5px;
+    position: absolute;
+    background-color: #fff;
+    left: 300px;
+    top:-450px;
+    border-radius:50%;
+    filter: blur(1px);
+    box-shadow: 20px 20px 1px #fff, 60px 40px 1px #fff, 160px 135px 1px #fff, 260px 240px 1px #fff, 360px 340px 1px #fff, 460px 440px 1px #fff, 560px 340px 1px #fff, 660px 240px 1px #fff, 760px 140px 1px #fff, 260px 640px 1px #fff, 160px 340px 1px #fff, 260px 440px 1px #fff, 760px 140px 1px #fff,860px 40px 1px #fff, 760px 140px 1px #fff, 1260px 120px 1px #fff, 1460px 10px 1px #fff,1560px 30px 1px #fff, 1590px 124px 1px #fff, 1680px 415px 1px #fff, 1720px 335px 1px #fff,1000px 212px 1px #fff, 990px 311px 1px #fff, 888px 122px 1px #fff, 765px 10px 1px #fff, 635px 15px 1px #fff, 554px 111px 1px #fff, 455px 222px 1px #fff, 125px 105px 1px #fff, 275px 96px 1px #fff, 245px 40px 1px #fff, 230px 70px 1px #fff, 285px 17px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 360px 340px 1px #fff, 430px 210px 1px #fff, 523px 23px 1px #fff, 1650px 335px 1px #fff, 1777px 123px 1px #fff, 1800px 222px 1px #fff, 1360px 140px 1px #fff;
+  }
+  
+  @keyframes snowfall {
+      100% {transform: translateY(1500px);}
+  }
+  
