@@ -5,17 +5,11 @@
   box-sizing: border-box;
 }
 
-#root{
+body:has(.gallery-container){
+  overflow: hidden;
   overflow-y: hidden;
-  
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  
-  
 }
+
 .gallery-container {
   overflow: hidden;
   position: relative;
