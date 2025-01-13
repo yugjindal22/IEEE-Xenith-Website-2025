@@ -42,7 +42,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='backdrop-blur-sm bg-black rounded-lg p-4 max-w-md mx-auto'>
         <div className='text-cyan-300 font-tech text-lg mb-2 text-center glowing-text'>Glimpses</div>
-        <Link to='/glimpses' className='transition-all duration-300 px-4 py-2 text-cyan-300 text-sm flex items-center gap-2 justify-center mx-auto border border-cyan-300/20 hover:border-cyan-300/50 hover:text-cyan-200'>
+        <Link to='/gallery' className='transition-all duration-300 px-4 py-2 text-cyan-300 text-sm flex items-center gap-2 justify-center mx-auto border border-cyan-300/20 hover:border-cyan-300/50 hover:text-cyan-200'>
           Memories
           <img src={arrow} alt='arrow' className='w-3 h-3 object-contain' />
         </Link>
