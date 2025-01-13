@@ -24,7 +24,7 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <div className='bgtop'></div>
-      <h1 className="events-heading">
+      <h1 className="heading">
         <center>GALLERY</center>
       </h1>
       <div className="slider-container">
