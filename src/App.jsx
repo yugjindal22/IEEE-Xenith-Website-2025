@@ -16,7 +16,19 @@ const App = () => {
             element={
               <>
                 <Routes>
-                  <Route path='/about' element={<About />} />
+                  <Route path='/about' element={
+                    <>
+                      <Snowfall
+                        style={{
+                          position: "fixed",
+                          width: "100vw",
+                          height: "100vh",
+                          zIndex: 1,
+                        }}
+                      />
+                      <About />
+                    </>
+                  } />
                   <Route path='/timeline' element={<Timeline />} />
                   <Route path='/events' element={
                     <>
