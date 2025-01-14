@@ -26,9 +26,9 @@
     color: rgba(255, 255, 255, 1);
     text-align: center;
     font-family: 'Libre-Baskerville', serif;
-    font-weight: 800; /* Bolder font */
-    font-size: 80px; /* Larger font size */
-    margin-top: 20px; /* Reduced margin to bring it closer */
+    font-weight: 800; 
+    font-size: 80px; 
+    margin-top: 20px; 
     max-width: 100%;
 }
 
@@ -83,7 +83,7 @@
 }
 .team-member-card {
     position: relative;
-    overflow: visible !important; /* Changed from hidden to show particles */
+    overflow: visible !important; 
 }
 
 /*.sparkle {
@@ -127,14 +127,14 @@
 .team-member-card::before {
     content: '';
     position: absolute;
-    inset: -30px; /* Increased size */
+    inset: -30px; 
     background: radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, transparent 70%);
     z-index: -1;
 }
 
 .team-member-image {
     position: relative;
-    z-index: 1; /* Ensure image stays on top */
+    z-index: 1; 
     width: 154px;
             aspect-ratio: 0.42;
             overflow: hidden;
@@ -181,7 +181,7 @@
 }
 
 .team-member-card:hover .team-member-info {
-    bottom: 10px; /* Changed from 0 to prevent overflow */
+    bottom: 10px; 
 }
 
 .team-member-name {
@@ -190,7 +190,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 5px; /* Added padding to prevent text touching edges */
+    padding: 0 5px; 
 }
 
 .team-member-position {
@@ -199,10 +199,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 5px; /* Added padding to prevent text touching edges */
+    padding: 0 5px; 
 }
 
-/* Add this to ensure the image container maintains the same border radius */
+
 .team-member-image {
     border-radius: 644px;
     overflow: hidden;
@@ -236,8 +236,8 @@
             }
         }
         html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y:auto;
     height: 100%; /* Ensure body and html occupy the full height */
@@ -292,15 +292,15 @@
 }
 .team-member-info {
     position: absolute;
-    bottom: -100%;  /* Start hidden below */
+    bottom: -100%;  
     left: 0;
     width: 100%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
-    opacity: 0;  /* Start fully transparent */
-    transition: bottom 0.3s ease, opacity 0.3s ease;  /* Smooth transition for both properties */
+    opacity: 0;  
+    transition: bottom 0.3s ease, opacity 0.3s ease;  
 }
 
 .team-member-card:hover .team-member-info {
@@ -311,14 +311,13 @@
     overflow: scroll;  /* Allow scrolling */
 }
 
-/* Hide internal scrollbars */
+
 ::-webkit-scrollbar {
-    display: none; /* Hide scrollbars */
+    display: none; 
 }
 
-/* For Firefox and other browsers */
 * {
-    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+    scrollbar-width: none;  
 }
 html {
     scroll-behavior: smooth;
@@ -359,7 +358,7 @@ body {
 }
 .team-section {
     position: relative;
-    overflow: hidden; /* Change from auto */
+    overflow: hidden; 
     height: 100vh;
 }
 
@@ -379,14 +378,14 @@ body {
     margin: 0;
     width: 100%;
 }
-/* Add these media queries at the end of your existing CSS */
 
-/* Make title responsive */
+
+
 .team-title {
     font-size: clamp(40px, 8vw, 80px);
 }
 
-/* Keep your existing flex layout but make it responsive */
+
 .team-grid {
     display: flex;
     flex-wrap: wrap;
@@ -397,7 +396,7 @@ body {
     padding: 20px;
 }
 
-/* Adjust card sizes for different screens */
+
 @media screen and (max-width: 1200px) {
     .team-member-card {
         width: 140px;
@@ -442,13 +441,13 @@ body {
     }
 }
 
-/* Fix any overflow issues */
+
 body, html {
     max-width: 100vw;
     overflow-x: hidden;
 }
 
-/* Ensure content fills viewport */
+
 .team-section {
     min-height: 100vh;
 }
@@ -460,15 +459,14 @@ body, html {
     }
 }
 
-    /* Add these new styles at the end of your existing CSS */
-/* Add these styles to the end of your CSS */
+    
 
 .team-member-card {
     position: relative;
     overflow: hidden;
-    display: flex;  /* Added */
-    justify-content: center;  /* Added */
-    align-items: center;  /* Added */
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
 }
 
 .team-member-image {
@@ -484,11 +482,11 @@ body, html {
 
 .team-member-info {
     position: absolute;
-    display: flex;  /* Added */
-    flex-direction: column;  /* Added */
-    justify-content: center;  /* Added */
-    align-items: center;  /* Added */
-    width: 90%;  /* Adjusted from 80% to 90% */
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    width: 90%;  
     text-align: center;
     opacity: 0;
     transition: all 0.3s ease;
@@ -498,7 +496,7 @@ body, html {
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     pointer-events: none;
-    /* Remove transform and use these instead */
+   
     inset: 0;
     margin: auto;
     height: fit-content;
@@ -514,8 +512,8 @@ body, html {
     font-weight: bold;
     margin: 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;  /* Added */
-    font-family:"Cookie", serif;   /* Elegant serif font */
+    width: 100%;  
+    font-family:"Cookie", serif;  
     letter-spacing: 0.5px;
     line-height: 1.2;
     text-transform: capitalize; 
@@ -526,14 +524,14 @@ body, html {
     font-size: 18px;
     margin-top: 8px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;  /* Added */
-    font-family: "Poppins", serif;  /* Modern sans-serif font */
-    font-weight: 600;  /* Light weight for elegance */
+    width: 100%;  
+    font-family: "Poppins", serif;  
+    font-weight: 600;  
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-/* Add subtle glow effect */
+
 .team-member-card:hover::after {
     content: '';
     position: absolute;
@@ -541,7 +539,7 @@ body, html {
     background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
     pointer-events: none;
 }
-/* Add to your existing CSS */
+
 .team-member-card {
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -576,18 +574,18 @@ body, html {
 .team-member-card:hover .team-member-info {
     transform: rotateY(0);
 }
-/* Reset and setup sequence */
+
 .team-member-card {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
 
 .sparkle {
-    display: none; /* Hide sparkles initially */
-    z-index: 10; /* Ensure they're on top */
+    display: none; 
+    z-index: 10; 
 }
 
-/* Animation sequence */
+
 .team-member-card:hover .team-member-image {
     transform: rotateY(180deg);
     transition: transform 0.6s ease;
@@ -598,12 +596,12 @@ body, html {
     transition: transform 0.6s ease;
 }
 
-/* Only show sparkles after flip completes */
+
 .team-member-card:hover .sparkle {
     display: block;
-    animation: none; /* Reset any existing animation */
+    animation: none; 
     animation: sparkleOut 1s ease forwards;
-    animation-delay: 0.7s; /* Start after flip finishes */
+    animation-delay: 0.7s; 
 }
 
 @keyframes sparkleOut {
@@ -619,15 +617,15 @@ body, html {
         opacity: 0;
     }
 }
-/* Reset sparkle animations */
+
 .sparkle {
-    opacity: 0; /* Start hidden */
+    opacity: 0; 
     pointer-events: none;
     z-index: 1000;
-    animation: none !important; /* Cancel any existing animations */
+    animation: none !important; 
 }
 
-/* Create a new animation sequence */
+
 .team-member-card:hover .team-member-image {
     transform: rotateY(180deg);
     transition: transform 0.6s ease;
@@ -660,7 +658,7 @@ body, html {
         opacity: 0;
     }
 }
-/* Remove any previous info styles and use these */
+
 .team-member-card {
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -685,7 +683,7 @@ body, html {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    transform: rotateY(-180deg); /* Start rotated */
+    transform: rotateY(-180deg); 
     border-radius: 644px;
     transition: transform 0.6s ease;
 }
@@ -712,7 +710,7 @@ body, html {
 .team-member-card:hover .team-member-position {
     transform: rotateY(0deg);
 }
-/* First, reset the base styles for html and body */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -720,22 +718,22 @@ html, body {
     width: 100%;
 }
 
-/* Add background image to body */
+
 body {
     background-image: url('bg.jpg');
-    background-size: cover;  /* Cover the entire viewport */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat;  /* Don't repeat the image */
-    background-attachment: fixed;  /* Keep image fixed while scrolling */
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
 }
 
-/* Add a dark overlay to improve text readability */
+
 .team-container {
-    background-color: rgba(12, 15, 25, 0.85);  /* Adjusted your existing background color to be semi-transparent */
+    background-color: rgba(12, 15, 25, 0.85);  
     min-height: 100vh;
 }
 @media screen and (max-width: 767px) {
-    /* Reset styles */
+    
     * {
         margin: 0;
         padding: 0;
@@ -763,30 +761,30 @@ body {
         z-index: 100;
     }
 
-    /* THIS IS THE IMPORTANT CHANGE */
+    /* IMPORTANT CHANGE */
     .team-grid {
-        display: block; /* Changed from flex/grid */
+        display: block; 
         width: 100%;
     }
 
     .team-row {
         width: 100%;
         height: 300px;
-        display: flex; /* Using flex only for the row */
+        display: flex; 
         justify-content: space-between;
         padding: 10px;
         margin-bottom: 20px;
     }
 
     .team-member-card {
-        width: 48%; /* Slightly increased for better spacing */
+        width: 48%; 
         height: 100%;
-        position: relative; /* Changed from absolute */
+        position: relative; 
         border-radius: 644px;
         overflow: hidden;
     }
 
-    /* Remove absolute positioning styles */
+    
     .team-member-card:nth-child(1),
     .team-member-card:nth-child(2) {
         position: relative;
