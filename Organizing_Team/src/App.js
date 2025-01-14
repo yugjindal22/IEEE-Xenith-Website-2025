@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; // Ensure your CSS is correctly linked
+import './App.css'; 
 
 function TeamSection() {
     return (
