@@ -70,13 +70,7 @@ function TeamSection() {
                                     <p className="team-member-position">Strategic<br />Head</p>
                                 </div>
                             </div>
-                            <div className="team-member-card wave-animation" style={{ '--i': 7 }}>
-                                <img src="Hardik.jpg" alt="Team member 7" className="team-member-image" />
-                                <div className="team-member-info">
-                                    <h3 className="team-member-name">Hardik<br />Agarwal</h3>
-                                    <p className="team-member-position">Head Of <br />Operations</p>
-                                </div>
-                            </div>
+                            
                             <div className="team-member-card wave-animation" style={{ '--i': 8 }}>
                                 <img src="aman.png" alt="Team member 8" className="team-member-image" />
                                 <div className="team-member-info">
