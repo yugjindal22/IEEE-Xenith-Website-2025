@@ -36,7 +36,7 @@ body:has(.gallery-container){
   text-shadow: 5px 5px 8px #556fcb;
   margin-bottom: 10px;
   position: absolute; 
-  top: 65%; 
+  top: 10%; 
   left: 50%; 
   transform: translateX(-50%); 
 }
