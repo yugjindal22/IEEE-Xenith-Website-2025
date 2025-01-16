@@ -877,7 +877,7 @@ min-height: 100vh;
 }
 
 header {
-    background-color: rgba(12, 15, 25, 1);
+    background-color: white;
     width: 100%;
     position: sticky;
     top: 0;
@@ -899,5 +899,6 @@ header {
     header {
         position: fixed;
         height: 60px;
+        background-color: white;
     }
 }
