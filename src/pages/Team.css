@@ -27,7 +27,7 @@ padding-top: 200px;
 }
 .team-container {
     padding-top: 60px;   
-    padding-bottom: 60px; 
+    padding-bottom: 40px; 
 }
 
 .team-title {
@@ -758,12 +758,12 @@ min-height: 100vh;
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     
     .team-container {
         padding: 10px;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     
     .team-title {
@@ -895,10 +895,102 @@ header {
     max-width: 100%;
     z-index: 20;
 }
+/* Fixed header - both views */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white !important;
+    z-index: 1000;
+}
+
+/* Sticky title - both views */
+.team-title {
+    position: fixed;  /* Changed to fixed */
+    top: 60px;       /* Right below header */
+    left: 0;
+    width: 100%;
+    background: rgba(12, 15, 25, 1);
+    padding: 20px 0;
+    z-index: 998;
+    margin: 0;
+}
+
+/* Navigation menu overlay - both views */
+.nav-menu {
+    position: absolute;
+    top: 60px;      /* Height of header */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;   /* Above title, below header */
+}
+
+/* Content spacing */
+.team-section {
+    padding-top: 140px;  /* Height of header + title */
+}
+
+/* Mobile specific adjustments */
 @media screen and (max-width: 767px) {
     header {
-        position: fixed;
         height: 60px;
+    }
+    
+    .team-title {
+        top: 60px;
+        font-size: 28px;
+        padding: 15px 0;
+        position: fixed;
+        background: rgba(12, 15, 25, 1);
+    }
+    
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
         background-color: white;
     }
+    
+    .team-section {
+        padding-top: 200px;  /* Account for fixed header + title */
+    }
+    
+    .mobile-team-grid {
+        padding-top: 20px;
+    }
+}.team-section {
+    padding-top: 200px; /* Height of header (60px) + title height (~80px) */
+}
+
+.team-container {
+    padding-top: 160px; /* Additional spacing to prevent cards from hiding */
+}
+
+.team-grid {
+    margin-top: 50px; /* Add space between title and first row */
+    padding-top: 20px;
+}@media screen and (max-width: 767px) {
+    .team-section {
+        padding-top: 140px;
+    }
+    
+    .mobile-team-grid {
+        margin-top: 80px; /* Increased spacing for mobile */
+        padding-top: 20px;
+    }
+    
+    .team-container {
+        padding-top: 40px;
+    }
+    
+    .team-row {
+        margin-top: 20px; /* Adjust card row spacing */
+    }
+}
+footer{
+    background-color: #ddd;
 }
