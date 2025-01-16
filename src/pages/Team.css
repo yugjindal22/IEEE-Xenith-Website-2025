@@ -893,6 +893,7 @@ header {
     margin: 0;
     padding: 20px 0;
     max-width: 100%;
+    z-index: 20;
 }
 @media screen and (max-width: 767px) {
     header {
