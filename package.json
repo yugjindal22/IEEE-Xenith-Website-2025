@@ -20,6 +20,7 @@
     "react-router-dom": "^6.17.0",
     "react-snowfall": "^2.2.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "swiper": "^11.2.1",
     "three": "^0.157.0"
   },
   "devDependencies": {

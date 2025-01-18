@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { socialLinks } from "../constants";
 
 const Footer = () => {
+  const location = useLocation(); 
+  
+  if (location?.pathname === '/timeline') {
+    return null;
+  }
+
   return (
     <footer className='footer font-poppins'>
       <hr className='border-slate-200' />

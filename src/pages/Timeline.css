@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Haettenschweiler&display=swap');
+
+.timeline-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: url('/src/assets/images/frost.jpg') center/cover no-repeat;
+  color: #16213e;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
+}
+
+.frost-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 60px;
+    color: #081737;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 800;
+    text-shadow: 
+        2px 2px 4px rgba(255, 255, 255, 0.9),
+        4px 4px 8px rgba(135, 207, 235, 0.575), 
+        6px 6px 12px rgba(173, 216, 230, 0.527), 
+        0 0 20px rgba(255, 255, 255, 0.832); 
+    animation: titleGlow 2s ease-in-out infinite alternate;
+    position: relative;
+}
+
+.ice-crystal {
+    font-size: 2.5rem;
+    margin: 0 15px;
+    animation: rotate 6s linear infinite;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(180deg, 
+        transparent 0%,
+        rgba(173, 216, 230, 0.7) 5%,  
+        rgba(173, 216, 230, 1) 80%,  
+        rgba(173, 216, 230, 0.7) 85%,  
+        transparent 100%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+    box-shadow: 
+        0 0 15px rgba(173, 216, 230, 0.8),
+        0 0 30px rgba(173, 216, 230, 0.4);
+    z-index: 1;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    animation: slideIn 0.5s ease-out;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgba(173, 216, 230, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    top: 15px;
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.6);
+    z-index: 2;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::after {
+    right: -17px;
+}
+
+.right::after {
+    left: -17px;
+}
+
+.frost-panel {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.2),
+        0 0 20px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.frost-panel::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.frost-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 40px rgba(31, 38, 135, 0.25),
+        0 0 30px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.frost-panel:hover::before {
+    opacity: 1;
+    animation: shimmer 2s infinite;
+}
+
+.frost-panel h2 {
+    color: #003344;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.frost-panel:hover h2 {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+}
+
+.event-time {
+    color: #005577;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.frost-panel:hover .event-time {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.location {
+    margin-top: 10px;
+    color: #006688;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.3);
+}
+
+.timeline-content {
+    padding: 20px;
+    position: relative;
+}
+
+.frost-panel p {
+    color: #004455; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.frost-panel:hover p {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(-5px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.9; }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+            3px 3px 0px #ffffff,
+            6px 6px 15px rgba(135, 206, 235, 0.8);
+    }
+    to {
+        text-shadow: 
+            3px 3px 0px #ffffff,
+            6px 6px 25px rgba(135, 206, 235, 1);
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes shimmer {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes titleGlow {
+    from {
+        text-shadow: 
+            2px 2px 4px rgb(255, 255, 255),
+            4px 4px 8px rgb(75, 138, 160),    
+            6px 6px 12px rgb(44, 96, 116),  
+            0 0 20px rgb(55, 119, 127);    
+    }
+    to {
+        text-shadow: 
+            2px 2px 4px rgba(255, 255, 255, 1),
+            4px 4px 8px rgb(43, 86, 101),      
+            6px 6px 12px rgb(53, 98, 115),  
+            0 0 30px rgba(95, 139, 145, 0.9),      
+            0 0 40px rgb(80, 141, 149);       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-title {
+        font-size: 2.5rem;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item.right {
+        left: 0%;
+    }
+    
+    .left::after, 
+    .right::after {
+        left: 15px;
+    }
+}
