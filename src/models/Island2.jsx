@@ -11,7 +11,7 @@ export function Island2({
     ...props
   })  {
     const { gl, viewport } = useThree();
-  const { nodes, materials } = useGLTF("../src/assets/3d/island2.glb");
+  const { nodes, materials } = useGLTF("/3d/island2.glb");
   const islandRef = useRef();
   const lastX = useRef(0);
   const lastY = useRef(0); // Add ref for last Y position
