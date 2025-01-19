@@ -251,7 +251,7 @@
     pointer-events: none; /* Prevent overlay from blocking hover events */
   }
 
-  button {
+  .event-button {
     width: 70px; /* Adjust button size */
     height: 25px;
     font-size: 0.8rem; /* Smaller font size */

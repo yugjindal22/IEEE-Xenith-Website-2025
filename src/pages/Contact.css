@@ -1,0 +1,132 @@
+.contact-container {
+  margin-top: 80px;
+  margin-inline: auto;
+  width: 100vw;
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 40px;
+  background-color: #b3d9ff;
+  border-radius: 8px 0px 0px 8px;
+  padding-block: 40px;
+  padding-left: 30px;
+}
+
+.contact-form-container {
+  padding-right: 30px;
+  padding-block: 40px;
+  flex: 1;
+}
+
+h2, h3 {
+  color: #003874; /* Darker blue for headings */
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #007bff; /* Blue for icons */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 24px;
+  color: #007bff; /* Blue for social icons */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0056b3; /* Darker blue for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b3d9ff; /* Light blue border */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff; /* White background for inputs */
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #007bff /* Blue button */ !important;
+  color: white !important;
+  border: none;
+  padding: 12px 20px !important;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px !important;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3 !important; /* Darker blue on hover */
+}
+
+.submit-button:disabled {
+  background-color: #b3d9ff; /* Light blue when disabled */
+  cursor: not-allowed;
+}
+
+.submit-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #28a745; /* Green for success message */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    padding-bottom: 30px;
+    border-radius: 0px;
+  }
+  
+  .contact-form-container {
+    border-radius: 0px;
+    padding-left: 30px;
+  }
+}
