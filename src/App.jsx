@@ -55,7 +55,22 @@ const App = () => {
                       <Events />
                     </>
                   } />
-                  <Route path='/gallery' element={<Gallery />} />
+                  
+                    <Route path='/gallery' element={
+                    <>
+                      <Snowfall
+                        style={{
+                          position: "fixed",
+                          width: "100vw",
+                          height: "100vh",
+                          zIndex: 1,
+                        }}
+                      />
+                      <Gallery />
+                    </>
+                  } />
+
+                  
                   <Route path='/team' element={<Team />} />
 
                   <Route path='/contact' element={<Contact />} />
