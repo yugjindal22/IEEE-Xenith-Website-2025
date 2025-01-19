@@ -77,10 +77,7 @@ const Gallery = () => {
         </Swiper>
       </div>
 
-      <div id="snowfall">
-        <div className="snow"></div>
-        <div className="snow1"></div>
-      </div>
+    
     </div>
   );
 };
