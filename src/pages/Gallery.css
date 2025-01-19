@@ -123,7 +123,32 @@ body:has(.gallery-container){
   .slider-container {
     margin-top: 40%;
     margin-bottom: 10%;
-    margin-left: 20%;
+    margin-left: 15%;
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .heading {
+    margin-top: 15%;
+    font-size: 25vw;
+  }
+  .slider-controler{
+    top:70%;
+  }
+  .events-heading {
+    top:75%;
+  }
+
+  .slider-box {
+    width: 320px; 
+    height: 220px; 
+  }
+  .slider-container {
+    margin-top: 65%;
+    margin-bottom: 10%;
+    margin-left: 7%;
     padding: 5px;
   }
 
