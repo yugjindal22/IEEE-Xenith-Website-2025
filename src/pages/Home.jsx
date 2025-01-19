@@ -71,11 +71,16 @@ const LoadingButton = ({ onStart, isModelLoaded }) => {
   return (
     <button 
       onClick={() => isModelLoaded && onStart()}
-      className={`px-6 py-3 bg-blue-600 rounded-lg relative overflow-hidden transition-colors
-        ${isModelLoaded ? 'hover:bg-blue-700' : 'cursor-not-allowed opacity-70'}`}
+      className={`
+        px-4 sm:px-6 py-2 sm:py-3 
+        text-sm sm:text-base md:text-lg
+        bg-blue-600 rounded-lg relative overflow-hidden transition-colors
+        transform hover:scale-105 transition-transform duration-200
+        ${isModelLoaded ? 'hover:bg-blue-700' : 'cursor-not-allowed opacity-70'}
+      `}
       disabled={!isModelLoaded}
     >
-      <div className="relative z-10">
+      <div className="relative z-10 whitespace-nowrap">
         {isModelLoaded ? 'Explore The World of Xenith' : 'Loading...'}
       </div>
       {!isModelLoaded && (
@@ -178,13 +183,41 @@ const Home = () => {
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
-    <section className='w-full h-screen relative'>
-      <div className={`absolute inset-0 flex flex-col items-center justify-center bg-black text-white z-20 transition-opacity duration-500 ${hasStarted ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <h1 className="text-2xl md:text-4xl font-bold mb-6 px-4 text-center">Some Yapping About Xenith.....</h1>
-        <LoadingButton 
-          onStart={() => setHasStarted(true)} 
-          isModelLoaded={isModelLoaded}
-        />
+    <section className='w-full h-screen relative' 
+      style={{
+        backgroundImage: 'url("/Home.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+      <div className={`
+        absolute inset-0 
+        flex flex-col items-center justify-center 
+        bg-black text-white z-20 
+        transition-opacity duration-500 
+        px-4 sm:px-6 md:px-8
+        ${hasStarted ? 'opacity-0 pointer-events-none' : 'opacity-100'}
+      `}>
+        <h1 className="
+          text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+          font-bold mb-4 sm:mb-6 
+          px-2 sm:px-4 
+          text-center
+          max-w-3xl
+          leading-tight
+        ">
+          Some Yapping About Xenith.....
+        </h1>
+        <div className="
+          w-full max-w-md 
+          flex justify-center 
+          transform hover:scale-105 transition-transform duration-200
+        ">
+          <LoadingButton 
+            onStart={() => setHasStarted(true)} 
+            isModelLoaded={isModelLoaded}
+          />
+        </div>
       </div>
 
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
@@ -196,6 +229,7 @@ const Home = () => {
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
         camera={{ near: 0.1, far: 1000 }}
+        style={{ background: 'transparent' }}
       >
         <LoadingManager />
         <Bird />
@@ -206,23 +240,23 @@ const Home = () => {
             scale={biplaneScale}
           />
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[1, 1, 1]} intensity={2} />
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 5, 10]} intensity={2} />
+          {/* Adjusted lighting for better visibility with background image */}
+          <directionalLight position={[1, 1, 1]} intensity={1.5} />
+          <ambientLight intensity={0.7} />
+          <pointLight position={[10, 5, 10]} intensity={1.5} />
           <spotLight
             position={[0, 50, 10]}
             angle={0.15}
             penumbra={1}
-            intensity={2}
+            intensity={1.5}
           />
           <hemisphereLight
             skyColor='#b1e1ff'
             groundColor='#000000'
-            intensity={1}
+            intensity={0.8}
           />
 
-          
-          <Sky isRotating={0} />
+          {/* Remove Sky component since we're using background image */}
           <Island2
             isRotating={isRotating}
             setIsRotating={setIsRotating}
