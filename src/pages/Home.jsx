@@ -198,7 +198,7 @@ const Home = () => {
       <div className={`
         absolute inset-0 
         flex flex-col items-center justify-center 
-        bg-black text-white z-20 
+        bg-black text-white z-10 
         transition-opacity duration-500 
         px-4 sm:px-6 md:px-8
         ${hasStarted ? 'opacity-0 pointer-events-none' : 'opacity-100'}
@@ -225,7 +225,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+      <div className='absolute top-28 left-0 right-0 z-[5] flex items-center justify-center'>
         {currentStage && hasStarted && <HomeInfo currentStage={currentStage} />}
       </div>
 
