@@ -182,6 +182,11 @@ const Home = () => {
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
+  const handleStartExploration = () => {
+    setHasStarted(true);
+    setIsPlayingMusic(true);  // Start playing music when exploration begins
+  };
+
   return (
     <section className='w-full h-screen relative' 
       style={{
@@ -214,7 +219,7 @@ const Home = () => {
           transform hover:scale-105 transition-transform duration-200
         ">
           <LoadingButton 
-            onStart={() => setHasStarted(true)} 
+            onStart={handleStartExploration}  // Updated to use new handler
             isModelLoaded={isModelLoaded}
           />
         </div>
