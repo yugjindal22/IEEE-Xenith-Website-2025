@@ -1,6 +1,8 @@
 
 
 import React, { useState, useEffect } from 'react';
+import Confetti from "react-confetti-boom";
+
 
 import './Team.css'; 
 
@@ -88,13 +90,7 @@ function TeamSection() {
                                         </div>
                                     </div>
                                     
-                                    <div className="team-member-card wave-animation" style={{ '--i': 7 }}>
-                                        <img src="core_images\Hardik.jpg" alt="Team member 6" className="team-member-image" />
-                                        <div className="team-member-info">
-                                            <h3 className="team-member-name">Hardik<br />Agarwal</h3>
-                                            <p className="team-member-position">Head Of<br />Operations</p>
-                                        </div>
-                                </div>
+                                    
                                     <div className="team-member-card wave-animation" style={{ '--i': 8 }}>
                                         <img src="core_images\aman.png" alt="Team member 8" className="team-member-image" />
                                         <div className="team-member-info">
@@ -105,7 +101,7 @@ function TeamSection() {
                                     <div className="team-member-card wave-animation" style={{ '--i': 9 }}>
                                         <img src="core_images\NikhilMittal.jpg" alt="Team member 9" className="team-member-image" />
                                         <div className="team-member-info">
-                                            <h3 className="team-member-name">Nikhil Mittal</h3>
+                                            <h3 className="team-member-name">Nikhil<br />Mittal</h3>
                                             <p className="team-member-position">Tech ECE<br /> Head</p>
                                         </div>
                                     </div>
@@ -120,7 +116,7 @@ function TeamSection() {
                                         <img src="core_images\aditya.jpg" alt="Team member 11" className="team-member-image" />
                                         <div className="team-member-info">
                                             <h3 className="team-member-name">Aditya Patil</h3>
-                                            <p className="team-member-position">Cinematography<br />Head</p>
+                                            <p className="team-member-position-ad" >Cinematography<br />Head</p>
                                         </div>
                                     </div>
                                 </div>
@@ -213,13 +209,7 @@ function TeamSection() {
                 <p className="team-member-position">Strategic<br />Head</p>
             </div>
         </div>
-        <div className="team-member-card wave-animation" style={{ '--i': 7 }}>
-            <img src="core_images\Hardik.jpg" alt="Team member 8" className="team-member-image" />
-            <div className="team-member-info">
-                <h3 className="team-member-name">Hardik<br />Agarwal</h3>
-                <p className="team-member-position">Head Of<br />Operations</p>
-            </div>
-        </div>
+        
         <div className="team-member-card wave-animation" style={{ '--i': 8 }}>
             <img src="core_images\aman.png" alt="Team member 8" className="team-member-image" />
             <div className="team-member-info">
