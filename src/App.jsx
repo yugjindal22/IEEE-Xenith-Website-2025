@@ -71,7 +71,20 @@ const App = () => {
                   } />
 
                   
-                  <Route path='/team' element={<Team />} />
+                  <Route path='/team' element={
+                    <>
+                    <Snowfall
+                      style={{
+                        position: "fixed",
+                        width: "100vw",
+                        height: "100vh",
+                        zIndex: 1,
+                      }}
+                    />
+                    <Team />
+                    </>
+                   }
+                    />
 
                   <Route path='/contact' element={<Contact />} />
                 </Routes>
