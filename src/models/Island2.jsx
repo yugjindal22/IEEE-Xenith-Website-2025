@@ -21,7 +21,7 @@ export function Island2({
   const dampingFactor = 0.95;
   const VERTICAL_ROTATION_LIMIT_UP = 0.65; // Upper limit (~28.6 degrees)
   const VERTICAL_ROTATION_LIMIT_DOWN = 0.35; // Lower limit (horizon)
-
+  const isTouchDevice = useRef('ontouchstart' in window);
   // Handle pointer (mouse or touch) down event
   const handlePointerDown = (event) => {
     event.stopPropagation();
@@ -157,25 +157,32 @@ export function Island2({
   useEffect(() => {
     // Add event listeners for pointer and keyboard events
     const canvas = gl.domElement;
+    if(isTouchDevice.current){
+      canvas.addEventListener("touchstart", handleTouchStart);
+      canvas.addEventListener("touchend", handleTouchEnd);
+      canvas.addEventListener("touchmove", handleTouchMove);
+    }
+    else{
     canvas.addEventListener("pointerdown", handlePointerDown);
     canvas.addEventListener("pointerup", handlePointerUp);
     canvas.addEventListener("pointermove", handlePointerMove);
     window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
-    canvas.addEventListener("touchstart", handleTouchStart);
-    canvas.addEventListener("touchend", handleTouchEnd);
-    canvas.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("keyup", handleKeyUp);}
+
 
     // Remove event listeners when component unmounts
     return () => {
+      if(isTouchDevice.current){
+        canvas.removeEventListener("touchstart", handleTouchStart);
+      canvas.removeEventListener("touchend", handleTouchEnd);
+      canvas.removeEventListener("touchmove", handleTouchMove);}
+      else{
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointerup", handlePointerUp);
       canvas.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
-      canvas.removeEventListener("touchstart", handleTouchStart);
-      canvas.removeEventListener("touchend", handleTouchEnd);
-      canvas.removeEventListener("touchmove", handleTouchMove);
+      }
     };
   }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
 
