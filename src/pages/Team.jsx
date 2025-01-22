@@ -60,14 +60,14 @@ function TeamSection() {
                                         </div>
                                     </div>
                                     <div className="team-member-card wave-animation" style={{ '--i': 3 }}>
-                                        <img src="core_images\Krishna_Agrawal.JPG" alt="Team member 3" className="team-member-image" />
+                                        <img src="core_images\krishna2.JPG" alt="Team member 3" className="team-member-image" />
                                         <div className="team-member-info">
                                             <h3 className="team-member-name">Krishna<br />Agrawal</h3>
                                             <p className="team-member-position">Organizing<br />Secretary</p>
                                         </div>
                                     </div>
                                     <div className="team-member-card wave-animation" style={{ '--i': 4 }}>
-                                        <img src="core_images\Gaurav_Agarwal.jpg" alt="Team member 4" className="team-member-image" />
+                                        <img src="core_images\gaurav2.jpg" alt="Team member 4" className="team-member-image" />
                                         <div className="team-member-info">
                                             <h3 className="team-member-name">Gaurav<br />Agarwal</h3>
                                             <p className="team-member-position">Treasurer</p>
@@ -182,14 +182,14 @@ function TeamSection() {
             </div>
         </div>
         <div className="team-member-card wave-animation" style={{ '--i': 3 }}>
-            <img src="core_images\Krishna_Agrawal.JPG" alt="Team member 3" className="team-member-image" />
+            <img src="core_images\krishna2.JPG" alt="Team member 3" className="team-member-image" />
             <div className="team-member-info">
                 <h3 className="team-member-name">Krishna<br />Agrawal</h3>
                 <p className="team-member-position">Organizing<br />Secretary</p>
             </div>
         </div>
         <div className="team-member-card wave-animation" style={{ '--i': 4 }}>
-            <img src="core_images\Gaurav_Agarwal.jpg" alt="Team member 4" className="team-member-image" />
+            <img src="core_images\gaurav2 - Copy.jpg" alt="Team member 4" className="team-member-image" />
             <div className="team-member-info">
                 <h3 className="team-member-name">Gaurav<br />Agarwal</h3>
                 <p className="team-member-position">Treasurer</p>
