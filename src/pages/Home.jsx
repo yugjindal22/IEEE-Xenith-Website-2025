@@ -6,7 +6,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Bird, Island2, Plane, Sky } from "../models";
+import { Bird, Island2, Plane } from "../models";
 
 // Create snow texture once
 const createSnowTexture = () => {

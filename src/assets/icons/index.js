@@ -6,6 +6,7 @@ import soundoff from './soundoff.png'
 import soundon from './soundon.png'
 import instagram from './instagram.svg'
 import facebook from './facebook.svg'
+import whatsapp from './whatsapp.svg'
 
 
 export {
@@ -15,6 +16,6 @@ export {
     contact,
     arrow,
     soundoff,
-    soundon
-    
+    soundon,
+    whatsapp
 }

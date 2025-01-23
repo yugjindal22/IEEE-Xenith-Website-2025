@@ -3,7 +3,8 @@ import {
     contact,
     facebook,
     instagram,
-    linkedin
+    linkedin,
+    whatsapp
 } from "../assets/icons";
 
 
@@ -29,5 +30,10 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/company/ieee-student-branch-jiit/',
+    },
+    {
+        name: 'Whatsapp',
+        iconUrl: whatsapp,
+        link: 'https://chat.whatsapp.com/I8Jxknym8r0HiGmNJM8EE2',
     }
 ];
