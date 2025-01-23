@@ -378,12 +378,12 @@ export function Island2({
                   <group name="House_5" position={[-4.72, 0, -5.936]} rotation={[0, 0.464, 0]}>
                     <group name="Chrimah_Lights_3" position={[-15.842, 2.779, 6.733]} rotation={[0, 1.571, 0]}>
                       <mesh name="Chrimah_Lights_3_Bulb_Blue_0" geometry={nodes.Chrimah_Lights_3_Bulb_Blue_0.geometry} material={materials.Bulb_Blue} />
-                      <mesh name="Chrimah_Lights_3_Bulb_red_0" geometry={nodes.Chrimah_Lights_3_Bulb_red_0.geometry} material={materials.Bulb_red} />
-                      <mesh name="Chrimah_Lights_3_Cable_0" geometry={nodes.Chrimah_Lights_3_Cable_0.geometry} material={materials.Cable} />
-                      <mesh name="Chrimah_Lights_3_Lamp_Metal_0" geometry={nodes.Chrimah_Lights_3_Lamp_Metal_0.geometry} material={materials.Lamp_Metal} />
                       <mesh name="Chrimah_Lights_3_Bulb_Green1_0" geometry={nodes.Chrimah_Lights_3_Bulb_Green1_0.geometry} material={materials.Bulb_Green1} />
                       <mesh name="Chrimah_Lights_3_Bulb_Green_0" geometry={nodes.Chrimah_Lights_3_Bulb_Green_0.geometry} material={materials.Bulb_Green} />
+                      <mesh name="Chrimah_Lights_3_Bulb_red_0" geometry={nodes.Chrimah_Lights_3_Bulb_red_0.geometry} material={materials.Bulb_red} />
                       <mesh name="Chrimah_Lights_3_Bulb_Yeller1_0" geometry={nodes.Chrimah_Lights_3_Bulb_Yeller1_0.geometry} material={materials.Bulb_Yeller1} />
+                      <mesh name="Chrimah_Lights_3_Cable_0" geometry={nodes.Chrimah_Lights_3_Cable_0.geometry} material={materials.Cable} />
+                      <mesh name="Chrimah_Lights_3_Lamp_Metal_0" geometry={nodes.Chrimah_Lights_3_Lamp_Metal_0.geometry} material={materials.Lamp_Metal} />
                     </group>
                     <group name="Reef_2" position={[-10.222, 0.947, 6.702]} rotation={[0, 1.571, 0]} scale={0.187}>
                       <mesh name="Reef_2_Brass_0" geometry={nodes.Reef_2_Brass_0.geometry} material={materials.Brass} />
@@ -408,20 +408,20 @@ export function Island2({
                   <group name="house_6" position={[-5.629, 0, 4.166]} rotation={[-Math.PI, 1.15, -Math.PI]}>
                     <group name="Chrimah_Lights_2" position={[-15.819, 2.779, 6.721]} rotation={[0, -Math.PI / 2, 0]}>
                       <mesh name="Chrimah_Lights_2_Bulb_Blue_0" geometry={nodes.Chrimah_Lights_2_Bulb_Blue_0.geometry} material={materials.Bulb_Blue} />
-                      <mesh name="Chrimah_Lights_2_Bulb_red_0" geometry={nodes.Chrimah_Lights_2_Bulb_red_0.geometry} material={materials.Bulb_red} />
-                      <mesh name="Chrimah_Lights_2_Cable_0" geometry={nodes.Chrimah_Lights_2_Cable_0.geometry} material={materials.Cable} />
-                      <mesh name="Chrimah_Lights_2_Lamp_Metal_0" geometry={nodes.Chrimah_Lights_2_Lamp_Metal_0.geometry} material={materials.Lamp_Metal} />
                       <mesh name="Chrimah_Lights_2_Bulb_Green1_0" geometry={nodes.Chrimah_Lights_2_Bulb_Green1_0.geometry} material={materials.Bulb_Green1} />
                       <mesh name="Chrimah_Lights_2_Bulb_Green_0" geometry={nodes.Chrimah_Lights_2_Bulb_Green_0.geometry} material={materials.Bulb_Green} />
+                      <mesh name="Chrimah_Lights_2_Bulb_red_0" geometry={nodes.Chrimah_Lights_2_Bulb_red_0.geometry} material={materials.Bulb_red} />
                       <mesh name="Chrimah_Lights_2_Bulb_Yeller1_0" geometry={nodes.Chrimah_Lights_2_Bulb_Yeller1_0.geometry} material={materials.Bulb_Yeller1} />
                       <mesh name="Chrimah_Lights_2_Bulb_Yeller_0" geometry={nodes.Chrimah_Lights_2_Bulb_Yeller_0.geometry} material={materials.Bulb_Yeller} />
+                      <mesh name="Chrimah_Lights_2_Cable_0" geometry={nodes.Chrimah_Lights_2_Cable_0.geometry} material={materials.Cable} />
+                      <mesh name="Chrimah_Lights_2_Lamp_Metal_0" geometry={nodes.Chrimah_Lights_2_Lamp_Metal_0.geometry} material={materials.Lamp_Metal} />
                     </group>
                     <mesh name="house_6_Brass_0" geometry={nodes.house_6_Brass_0.geometry} material={materials.Brass} />
-                    <mesh name="house_6_phong2_0" geometry={nodes.house_6_phong2_0.geometry} material={materials.phong2} />
-                    <mesh name="house_6_Snow_0" geometry={nodes.house_6_Snow_0.geometry} material={materials.Snow} />
                     <mesh name="house_6_Brick_1_0" geometry={nodes.house_6_Brick_1_0.geometry} material={materials.Brick_1} />
                     <mesh name="house_6_Brick_2_0" geometry={nodes.house_6_Brick_2_0.geometry} material={materials.Brick_2} />
+                    <mesh name="house_6_phong2_0" geometry={nodes.house_6_phong2_0.geometry} material={materials.phong2} />
                     <mesh name="house_6_Rock_0" geometry={nodes.house_6_Rock_0.geometry} material={materials.Rock} />
+                    <mesh name="house_6_Snow_0" geometry={nodes.house_6_Snow_0.geometry} material={materials.Snow} />
                     <mesh name="house_6_Stone_2_0" geometry={nodes.house_6_Stone_2_0.geometry} material={materials.Stone_2} />
                     <mesh name="house_6_Window_Light_0" geometry={nodes.house_6_Window_Light_0.geometry} material={materials.Window_Light} />
                     <mesh name="house_6_Wood_1_0" geometry={nodes.house_6_Wood_1_0.geometry} material={materials.Wood_1} />
@@ -490,143 +490,144 @@ export function Island2({
                 <group name="Main_Chrimah_Tree" position={[27.308, 0.14, 19.148]} rotation={[0, 1.363, 0]} scale={1.48}>
                   <group name="Bulbs" position={[8.614, 0.34, -17.979]} rotation={[0, -0.765, 0]} scale={0.216}>
                     <group name="polySurface176" position={[3.787, 4.31, 3.851]} rotation={[-0.484, 0.564, 0.171]}>
-                      <mesh name="polySurface176_Deco1_0" geometry={nodes.polySurface176_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface176_Brass_0" geometry={nodes.polySurface176_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface176_Deco1_0" geometry={nodes.polySurface176_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface177" position={[-5.481, 3.672, 6.627]} rotation={[-0.164, 0.139, -0.075]}>
-                      <mesh name="polySurface177_Deco2_0" geometry={nodes.polySurface177_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface177_Brass_0" geometry={nodes.polySurface177_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface177_Deco2_0" geometry={nodes.polySurface177_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface178" position={[3.866, -2.46, -1.41]} rotation={[0.355, 0.509, 0.392]}>
-                      <mesh name="polySurface178_Deco3_0" geometry={nodes.polySurface178_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface178_Brass_0" geometry={nodes.polySurface178_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface178_Deco3_0" geometry={nodes.polySurface178_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface179" position={[-3.948, 1.694, 8.112]} rotation={[-0.132, 0.044, 0.173]}>
                       <mesh name="polySurface179_Brass_0" geometry={nodes.polySurface179_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface179_Deco4_0" geometry={nodes.polySurface179_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface180" position={[5.82, -5.281, -5.291]} rotation={[1.456, 1.028, -1.722]}>
-                      <mesh name="polySurface180_Deco3_0" geometry={nodes.polySurface180_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface180_Brass_0" geometry={nodes.polySurface180_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface180_Deco3_0" geometry={nodes.polySurface180_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface181" position={[-1.87, 2.785, 3.612]} rotation={[-0.132, 0.044, 0.173]}>
                       <mesh name="polySurface181_Brass_0" geometry={nodes.polySurface181_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface181_Deco4_0" geometry={nodes.polySurface181_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface182" position={[1.72, 4.31, -2.488]} rotation={[-0.484, 0.564, 0.171]}>
-                      <mesh name="polySurface182_Deco1_0" geometry={nodes.polySurface182_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface182_Brass_0" geometry={nodes.polySurface182_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface182_Deco1_0" geometry={nodes.polySurface182_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface183" position={[-3.667, -9.293, -9.332]} rotation={[1.127, 0.253, -0.144]}>
-                      <mesh name="polySurface183_Deco2_0" geometry={nodes.polySurface183_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface183_Brass_0" geometry={nodes.polySurface183_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface183_Deco2_0" geometry={nodes.polySurface183_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface184" position={[-6.225, 2.785, -0.092]} rotation={[-0.132, 0.044, 0.173]}>
                       <mesh name="polySurface184_Brass_0" geometry={nodes.polySurface184_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface184_Deco4_0" geometry={nodes.polySurface184_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface185" position={[-12.886, -8.151, -7.785]} rotation={[0.901, -0.418, 0.307]}>
-                      <mesh name="polySurface185_Deco3_0" geometry={nodes.polySurface185_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface185_Brass_0" geometry={nodes.polySurface185_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface185_Deco3_0" geometry={nodes.polySurface185_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface186" position={[0.91, -0.599, -2.194]} rotation={[0.355, 0.509, 0.392]}>
-                      <mesh name="polySurface186_Deco3_0" geometry={nodes.polySurface186_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface186_Brass_0" geometry={nodes.polySurface186_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface186_Deco3_0" geometry={nodes.polySurface186_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface187" position={[-8.69, 1.501, 7.725]} rotation={[-0.132, 0.044, 0.173]}>
                       <mesh name="polySurface187_Brass_0" geometry={nodes.polySurface187_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface187_Deco4_0" geometry={nodes.polySurface187_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface188" position={[4.332, -0.88, -1.33]} rotation={[0.442, 1.472, -1.039]}>
-                      <mesh name="polySurface188_Deco1_0" geometry={nodes.polySurface188_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface188_Brass_0" geometry={nodes.polySurface188_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface188_Deco1_0" geometry={nodes.polySurface188_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface189" position={[-5.239, -8.472, -9.606]} rotation={[1.929, 0.36, -2.694]}>
-                      <mesh name="polySurface189_Deco3_0" geometry={nodes.polySurface189_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface189_Brass_0" geometry={nodes.polySurface189_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface189_Deco3_0" geometry={nodes.polySurface189_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface190" position={[-8.969, 4.722, 5.485]} rotation={[-0.223, 0.287, -0.247]}>
-                      <mesh name="polySurface190_Deco2_0" geometry={nodes.polySurface190_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface190_Brass_0" geometry={nodes.polySurface190_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface190_Deco2_0" geometry={nodes.polySurface190_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface191" position={[-0.174, -3.067, -6.743]} rotation={[0.957, 1.381, -0.909]}>
-                      <mesh name="polySurface191_Deco1_0" geometry={nodes.polySurface191_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface191_Brass_0" geometry={nodes.polySurface191_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface191_Deco1_0" geometry={nodes.polySurface191_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface192" position={[-1.91, -3.591, -20.799]} rotation={[2.674, 1.031, -2.054]}>
-                      <mesh name="polySurface192_Deco1_0" geometry={nodes.polySurface192_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface192_Brass_0" geometry={nodes.polySurface192_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface192_Deco1_0" geometry={nodes.polySurface192_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface193" position={[-7.724, -8.814, -14.345]} rotation={[1.929, 0.36, -2.694]}>
-                      <mesh name="polySurface193_Deco3_0" geometry={nodes.polySurface193_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface193_Brass_0" geometry={nodes.polySurface193_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface193_Deco3_0" geometry={nodes.polySurface193_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface194" position={[-0.25, -3.867, -16.591]} rotation={[2.255, 1.023, -1.718]}>
-                      <mesh name="polySurface194_Deco2_0" geometry={nodes.polySurface194_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface194_Brass_0" geometry={nodes.polySurface194_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface194_Deco2_0" geometry={nodes.polySurface194_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface195" position={[-6.214, -5.909, -2.333]} rotation={[0.553, 0.647, -0.904]}>
                       <mesh name="polySurface195_Brass_0" geometry={nodes.polySurface195_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface195_Deco4_0" geometry={nodes.polySurface195_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface196" position={[-3.642, 13.115, 4.09]} rotation={[-0.644, 0.515, -0.148]}>
-                      <mesh name="polySurface196_Deco2_0" geometry={nodes.polySurface196_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface196_Brass_0" geometry={nodes.polySurface196_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface196_Deco2_0" geometry={nodes.polySurface196_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface197" position={[0.766, 4.644, -2.495]} rotation={[-0.246, 1.21, -0.589]}>
                       <mesh name="polySurface197_Brass_0" geometry={nodes.polySurface197_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface197_Deco4_0" geometry={nodes.polySurface197_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface198" position={[-14.943, -5.98, -7.031]} rotation={[1.737, -0.32, -3.037]}>
-                      <mesh name="polySurface198_Deco3_0" geometry={nodes.polySurface198_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface198_Brass_0" geometry={nodes.polySurface198_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface198_Deco3_0" geometry={nodes.polySurface198_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface199" position={[1.281, 8.9, 4.377]} rotation={[-0.484, 0.564, 0.171]}>
-                      <mesh name="polySurface199_Deco1_0" geometry={nodes.polySurface199_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface199_Brass_0" geometry={nodes.polySurface199_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface199_Deco1_0" geometry={nodes.polySurface199_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface200" position={[6.814, 4.746, -4.405]} rotation={[-0.246, 1.21, -0.589]}>
                       <mesh name="polySurface200_Brass_0" geometry={nodes.polySurface200_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface200_Deco4_0" geometry={nodes.polySurface200_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface201" position={[-8.324, -6.348, -9.424]} rotation={[1.737, -0.32, -3.037]}>
-                      <mesh name="polySurface201_Deco3_0" geometry={nodes.polySurface201_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface201_Brass_0" geometry={nodes.polySurface201_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface201_Deco3_0" geometry={nodes.polySurface201_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface202" position={[3.239, 8.13, 0.278]} rotation={[-0.484, 0.564, 0.171]}>
-                      <mesh name="polySurface202_Deco1_0" geometry={nodes.polySurface202_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface202_Brass_0" geometry={nodes.polySurface202_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface202_Deco1_0" geometry={nodes.polySurface202_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface203" position={[0.175, 10.929, 5.346]} rotation={[-0.644, 0.515, -0.148]}>
-                      <mesh name="polySurface203_Deco2_0" geometry={nodes.polySurface203_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface203_Brass_0" geometry={nodes.polySurface203_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface203_Deco2_0" geometry={nodes.polySurface203_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface204" position={[3.243, 2.908, -18.899]} rotation={[2.908, 0.503, 1.995]}>
                       <mesh name="polySurface204_Brass_0" geometry={nodes.polySurface204_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface204_Deco4_0" geometry={nodes.polySurface204_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface205" position={[-5.383, 8.091, -26.575]} rotation={[-2.905, 0.156, 3.047]}>
-                      <mesh name="polySurface205_Deco3_0" geometry={nodes.polySurface205_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface205_Brass_0" geometry={nodes.polySurface205_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface205_Deco3_0" geometry={nodes.polySurface205_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface206" position={[2.937, 2.638, -7.384]} rotation={[0.379, 0.929, 0.2]}>
                       <mesh name="polySurface206_Brass_0" geometry={nodes.polySurface206_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface206_Deco4_0" geometry={nodes.polySurface206_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface207" position={[-13.581, -2.756, -2.444]} rotation={[0.462, -0.04, -0.521]}>
-                      <mesh name="polySurface207_Deco1_0" geometry={nodes.polySurface207_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface207_Brass_0" geometry={nodes.polySurface207_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface207_Deco1_0" geometry={nodes.polySurface207_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface208" position={[-4.948, -0.944, -2.304]} rotation={[0.342, 0.166, -0.175]}>
-                      <mesh name="polySurface208_Deco2_0" geometry={nodes.polySurface208_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface208_Brass_0" geometry={nodes.polySurface208_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface208_Deco2_0" geometry={nodes.polySurface208_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface209" position={[-5.086, 13.115, -0.073]} rotation={[-0.644, 0.515, -0.148]}>
-                      <mesh name="polySurface209_Deco2_0" geometry={nodes.polySurface209_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface209_Brass_0" geometry={nodes.polySurface209_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface209_Deco2_0" geometry={nodes.polySurface209_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface210" position={[-22.15, -1.655, -10.745]} rotation={[1.729, -1.012, 1.967]}>
-                      <mesh name="polySurface210_Deco3_0" geometry={nodes.polySurface210_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface210_Brass_0" geometry={nodes.polySurface210_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface210_Deco3_0" geometry={nodes.polySurface210_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface211" position={[1.061, 0.836, -14.396]} rotation={[2.908, 0.503, 1.995]}>
                       <mesh name="polySurface211_Brass_0" geometry={nodes.polySurface211_Brass_0.geometry} material={materials.Brass} />
@@ -637,138 +638,140 @@ export function Island2({
                       <mesh name="polySurface212_Deco4_0" geometry={nodes.polySurface212_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface213" position={[-2.212, 12.49, 3.931]} rotation={[-0.484, 0.564, 0.171]}>
-                      <mesh name="polySurface213_Deco1_0" geometry={nodes.polySurface213_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface213_Brass_0" geometry={nodes.polySurface213_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface213_Deco1_0" geometry={nodes.polySurface213_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface214" position={[-12.051, -2.637, -6.49]} rotation={[1.737, -0.32, -3.037]}>
-                      <mesh name="polySurface214_Deco3_0" geometry={nodes.polySurface214_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface214_Brass_0" geometry={nodes.polySurface214_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface214_Deco3_0" geometry={nodes.polySurface214_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface215" position={[-0.493, 2.856, -12.061]} rotation={[2.258, 0.939, -2.476]}>
-                      <mesh name="polySurface215_Deco2_0" geometry={nodes.polySurface215_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface215_Brass_0" geometry={nodes.polySurface215_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface215_Deco2_0" geometry={nodes.polySurface215_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface216" position={[8.44, 5.768, -5.423]} rotation={[0.463, 1.482, -0.977]}>
-                      <mesh name="polySurface216_Deco1_0" geometry={nodes.polySurface216_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface216_Brass_0" geometry={nodes.polySurface216_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface216_Deco1_0" geometry={nodes.polySurface216_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface217" position={[7.507, 11.159, -5.314]} rotation={[-0.852, 1.296, 0.734]}>
-                      <mesh name="polySurface217_Deco2_0" geometry={nodes.polySurface217_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface217_Brass_0" geometry={nodes.polySurface217_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface217_Deco2_0" geometry={nodes.polySurface217_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface218" position={[6.371, 15.583, -12.136]} rotation={[-1.297, 0.918, 1.59]}>
                       <mesh name="polySurface218_Brass_0" geometry={nodes.polySurface218_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface218_Deco4_0" geometry={nodes.polySurface218_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface219" position={[-8.699, 5.165, -24.539]} rotation={[2.846, 0.009, 3.116]}>
-                      <mesh name="polySurface219_Deco3_0" geometry={nodes.polySurface219_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface219_Brass_0" geometry={nodes.polySurface219_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface219_Deco3_0" geometry={nodes.polySurface219_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface220" position={[1.036, 1.749, -19.969]} rotation={[2.528, 0.509, -2.883]}>
-                      <mesh name="polySurface220_Deco3_0" geometry={nodes.polySurface220_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface220_Brass_0" geometry={nodes.polySurface220_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface220_Deco3_0" geometry={nodes.polySurface220_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface221" position={[-7.002, 3.558, -0.695]} rotation={[0.22, 0.383, -0.507]}>
-                      <mesh name="polySurface221_Deco1_0" geometry={nodes.polySurface221_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface221_Brass_0" geometry={nodes.polySurface221_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface221_Deco1_0" geometry={nodes.polySurface221_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface222" position={[-0.324, 1.772, -9.622]} rotation={[1.082, 0.951, -0.646]}>
                       <mesh name="polySurface222_Brass_0" geometry={nodes.polySurface222_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface222_Deco4_0" geometry={nodes.polySurface222_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface223" position={[0.385, 8.349, -13.679]} rotation={[2.589, 0.835, 3.137]}>
-                      <mesh name="polySurface223_Deco2_0" geometry={nodes.polySurface223_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface223_Brass_0" geometry={nodes.polySurface223_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface223_Deco2_0" geometry={nodes.polySurface223_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface224" position={[-17.955, 16.121, -21.38]} rotation={[-2.742, -0.306, -2.532]}>
                       <mesh name="polySurface224_Brass_0" geometry={nodes.polySurface224_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface224_Deco4_0" geometry={nodes.polySurface224_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface225" position={[-17.517, 4.816, -5.282]} rotation={[0.902, -0.677, 0.58]}>
-                      <mesh name="polySurface225_Deco3_0" geometry={nodes.polySurface225_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface225_Brass_0" geometry={nodes.polySurface225_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface225_Deco3_0" geometry={nodes.polySurface225_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface226" position={[3.667, 9.855, -3.386]} rotation={[0.463, 1.482, -0.977]}>
-                      <mesh name="polySurface226_Deco1_0" geometry={nodes.polySurface226_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface226_Brass_0" geometry={nodes.polySurface226_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface226_Deco1_0" geometry={nodes.polySurface226_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface227" position={[-12.851, 4.255, -0.654]} rotation={[1.018, -0.633, 1.237]}>
-                      <mesh name="polySurface227_Deco3_0" geometry={nodes.polySurface227_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface227_Brass_0" geometry={nodes.polySurface227_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface227_Deco3_0" geometry={nodes.polySurface227_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface228" position={[-0.894, 2.422, -15.176]} rotation={[2.457, 0.308, 2.795]}>
                       <mesh name="polySurface228_Brass_0" geometry={nodes.polySurface228_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface228_Deco4_0" geometry={nodes.polySurface228_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface229" position={[7.557, 19.083, -10.415]} rotation={[-2.075, 0.979, 1.67]}>
-                      <mesh name="polySurface229_Deco2_0" geometry={nodes.polySurface229_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface229_Brass_0" geometry={nodes.polySurface229_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface229_Deco2_0" geometry={nodes.polySurface229_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface230" position={[7.125, 16.462, -5.56]} rotation={[-0.897, 0.842, 0.989]}>
-                      <mesh name="polySurface230_Deco1_0" geometry={nodes.polySurface230_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface230_Brass_0" geometry={nodes.polySurface230_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface230_Deco1_0" geometry={nodes.polySurface230_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface231" position={[-13.082, 2.091, -18.371]} rotation={[2.144, -0.542, 2.246]}>
-                      <mesh name="polySurface231_Deco3_0" geometry={nodes.polySurface231_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface231_Brass_0" geometry={nodes.polySurface231_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface231_Deco3_0" geometry={nodes.polySurface231_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface232" position={[3.264, 9.688, -9.814]} rotation={[0.882, 1.386, -0.709]}>
-                      <mesh name="polySurface232_Deco2_0" geometry={nodes.polySurface232_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface232_Brass_0" geometry={nodes.polySurface232_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface232_Deco2_0" geometry={nodes.polySurface232_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface233" position={[-14.595, 8.294, -3.114]} rotation={[0.305, -0.788, -0.062]}>
                       <mesh name="polySurface233_Brass_0" geometry={nodes.polySurface233_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface233_Deco4_0" geometry={nodes.polySurface233_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface234" position={[-11.956, 5.846, -7.64]} rotation={[1.346, -0.577, 1.528]}>
-                      <mesh name="polySurface234_Deco3_0" geometry={nodes.polySurface234_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface234_Brass_0" geometry={nodes.polySurface234_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface234_Deco3_0" geometry={nodes.polySurface234_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface235" position={[-0.877, 12.909, -19.557]} rotation={[2.847, 0.499, 2.903]}>
                       <mesh name="polySurface235_Brass_0" geometry={nodes.polySurface235_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface235_Deco4_0" geometry={nodes.polySurface235_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface236" position={[-6.828, 11.561, -19.287]} rotation={[2.772, -0.024, 2.818]}>
-                      <mesh name="polySurface236_Deco2_0" geometry={nodes.polySurface236_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface236_Brass_0" geometry={nodes.polySurface236_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface236_Deco2_0" geometry={nodes.polySurface236_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface237" position={[6.88, 17.049, -4.545]} rotation={[-1.017, 1.323, 0.494]}>
-                      <mesh name="polySurface237_Deco1_0" geometry={nodes.polySurface237_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface237_Brass_0" geometry={nodes.polySurface237_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface237_Deco1_0" geometry={nodes.polySurface237_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface238" position={[2.284, 13.368, -2.359]} rotation={[-0.05, 0.735, 0.192]}>
-                      <mesh name="polySurface238_Deco1_0" geometry={nodes.polySurface238_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface238_Brass_0" geometry={nodes.polySurface238_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface238_Deco1_0" geometry={nodes.polySurface238_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface239" position={[-2.77, 16.485, -23.419]} rotation={[-2.991, 0.513, 3.011]}>
                       <mesh name="polySurface239_Brass_0" geometry={nodes.polySurface239_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface239_Deco4_0" geometry={nodes.polySurface239_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface240" position={[-6.643, 21.36, -23.474]} rotation={[-2.833, 0.025, -3.07]}>
-                      <mesh name="polySurface240_Deco2_0" geometry={nodes.polySurface240_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface240_Brass_0" geometry={nodes.polySurface240_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface240_Deco2_0" geometry={nodes.polySurface240_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface241" position={[1.201, 12.412, -21.081]} rotation={[2.981, 0.286, 2.59]}>
-                      <mesh name="polySurface241_Deco2_0" geometry={nodes.polySurface241_Deco2_0.geometry} material={materials.Deco2} />
                       <mesh name="polySurface241_Brass_0" geometry={nodes.polySurface241_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface241_Deco2_0" geometry={nodes.polySurface241_Deco2_0.geometry} material={materials.Deco2} />
                     </group>
                     <group name="polySurface242" position={[-12.681, 4.533, -3.932]} rotation={[1.346, -0.577, 1.528]}>
-                      <mesh name="polySurface242_Deco3_0" geometry={nodes.polySurface242_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface242_Brass_0" geometry={nodes.polySurface242_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface242_Deco3_0" geometry={nodes.polySurface242_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                     <group name="polySurface243" position={[-10.136, 17.157, -22.261]} rotation={[-3.088, -0.007, -3.098]}>
                       <mesh name="polySurface243_Brass_0" geometry={nodes.polySurface243_Brass_0.geometry} material={materials.Brass} />
                       <mesh name="polySurface243_Deco4_0" geometry={nodes.polySurface243_Deco4_0.geometry} material={materials.Deco4} />
                     </group>
                     <group name="polySurface244" position={[-3.093, 11.552, 2.535]} rotation={[0.067, 0.641, -0.197]}>
-                      <mesh name="polySurface244_Deco1_0" geometry={nodes.polySurface244_Deco1_0.geometry} material={materials.Deco1} />
                       <mesh name="polySurface244_Brass_0" geometry={nodes.polySurface244_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface244_Deco1_0" geometry={nodes.polySurface244_Deco1_0.geometry} material={materials.Deco1} />
                     </group>
                     <group name="polySurface245" position={[-19.975, 8.201, -7.034]} rotation={[1.112, -0.972, 1.2]}>
-                      <mesh name="polySurface245_Deco3_0" geometry={nodes.polySurface245_Deco3_0.geometry} material={materials.Deco3} />
                       <mesh name="polySurface245_Brass_0" geometry={nodes.polySurface245_Brass_0.geometry} material={materials.Brass} />
+                      <mesh name="polySurface245_Deco3_0" geometry={nodes.polySurface245_Deco3_0.geometry} material={materials.Deco3} />
                     </group>
                   </group>
+                  <group name="Chrimas_Star" position={[7.803, -0.094, -20.514]} rotation={[0, -1.363, 0]} scale={0.676} />
+                  <group name="Star" position={[16.575, -5.106, -22.221]} rotation={[-1.227, -1.011, 0.4]} scale={[0.206, 0.268, 0.206]} />
                   <group name="Tinsel" position={[8.814, 1.07, -20.649]} rotation={[Math.PI, -1.551, Math.PI]} scale={0.026}>
                     <mesh name="Tinsel_blinn1_0" geometry={nodes.Tinsel_blinn1_0.geometry} material={materials.blinn1} />
                   </group>
@@ -1066,9 +1069,9 @@ export function Island2({
                     <mesh name="Tree_Wood_2_0" geometry={nodes.Tree_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree10" position={[16.071, 0, 0.595]} rotation={[0, 0.732, 0]}>
-                    <mesh name="Tree10_Wood_2_0" geometry={nodes.Tree10_Wood_2_0.geometry} material={materials.Wood_2} />
                     <mesh name="Tree10_Snow_0" geometry={nodes.Tree10_Snow_0.geometry} material={materials.Snow} />
                     <mesh name="Tree10_Tree_1_0" geometry={nodes.Tree10_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree10_Wood_2_0" geometry={nodes.Tree10_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree102" position={[-7.473, 0.42, 20.995]} rotation={[0, 0.63, 0]}>
                     <mesh name="Tree102_Snow_0" geometry={nodes.Tree102_Snow_0.geometry} material={materials.Snow} />
@@ -1166,9 +1169,9 @@ export function Island2({
                     <mesh name="Tree140_Wood_2_0" geometry={nodes.Tree140_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree141" position={[28.106, 0, -30.719]} rotation={[-Math.PI, 0.483, -Math.PI]}>
-                    <mesh name="Tree141_Wood_2_0" geometry={nodes.Tree141_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree141_Tree_1_0" geometry={nodes.Tree141_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree141_Snow_0" geometry={nodes.Tree141_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree141_Tree_1_0" geometry={nodes.Tree141_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree141_Wood_2_0" geometry={nodes.Tree141_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree142" position={[35.056, 0, -19.005]} rotation={[-Math.PI, 1.215, -Math.PI]}>
                     <mesh name="Tree142_Snow_0" geometry={nodes.Tree142_Snow_0.geometry} material={materials.Snow} />
@@ -1186,9 +1189,9 @@ export function Island2({
                     <mesh name="Tree144_Wood_2_0" geometry={nodes.Tree144_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree145" position={[3.828, 0, -33.021]} rotation={[Math.PI, -0.902, Math.PI]}>
-                    <mesh name="Tree145_Wood_2_0" geometry={nodes.Tree145_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree145_Tree_1_0" geometry={nodes.Tree145_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree145_Snow_0" geometry={nodes.Tree145_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree145_Tree_1_0" geometry={nodes.Tree145_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree145_Wood_2_0" geometry={nodes.Tree145_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree146" position={[17.377, 1.104, -39.526]} rotation={[Math.PI, -0.169, Math.PI]}>
                     <mesh name="Tree146_Snow_0" geometry={nodes.Tree146_Snow_0.geometry} material={materials.Snow} />
@@ -1206,13 +1209,13 @@ export function Island2({
                     <mesh name="Tree148_Wood_2_0" geometry={nodes.Tree148_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree149" position={[1.743, 0, -30.23]} rotation={[Math.PI, -0.902, Math.PI]}>
-                    <mesh name="Tree149_Wood_2_0" geometry={nodes.Tree149_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree149_Tree_1_0" geometry={nodes.Tree149_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree149_Snow_0" geometry={nodes.Tree149_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree149_Tree_1_0" geometry={nodes.Tree149_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree149_Wood_2_0" geometry={nodes.Tree149_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree150" position={[15.788, 0, -36.16]} rotation={[Math.PI, -0.169, Math.PI]}>
-                    <mesh name="Tree150_Tree_1_0" geometry={nodes.Tree150_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree150_Snow_0" geometry={nodes.Tree150_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree150_Tree_1_0" geometry={nodes.Tree150_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree150_Wood_2_0" geometry={nodes.Tree150_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree151" position={[-4.081, 0, -29.386]} rotation={[Math.PI, -0.902, Math.PI]}>
@@ -1221,24 +1224,24 @@ export function Island2({
                     <mesh name="Tree151_Wood_2_0" geometry={nodes.Tree151_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree152" position={[-0.614, 0, 11.603]} rotation={[0, -0.235, 0]}>
-                    <mesh name="Tree152_Wood_2_0" geometry={nodes.Tree152_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree152_Tree_1_0" geometry={nodes.Tree152_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree152_Snow_0" geometry={nodes.Tree152_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree152_Tree_1_0" geometry={nodes.Tree152_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree152_Wood_2_0" geometry={nodes.Tree152_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree153" position={[3.389, 0, 10.872]} rotation={[0, -0.235, 0]}>
-                    <mesh name="Tree153_Wood_2_0" geometry={nodes.Tree153_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree153_Tree_1_0" geometry={nodes.Tree153_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree153_Snow_0" geometry={nodes.Tree153_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree153_Tree_1_0" geometry={nodes.Tree153_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree153_Wood_2_0" geometry={nodes.Tree153_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree154" position={[-9, 0, -1.623]} rotation={[0, -0.968, 0]}>
-                    <mesh name="Tree154_Tree_1_0" geometry={nodes.Tree154_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree154_Snow_0" geometry={nodes.Tree154_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree154_Tree_1_0" geometry={nodes.Tree154_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree154_Wood_2_0" geometry={nodes.Tree154_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree155" position={[-6.13, 0, -19.991]} rotation={[Math.PI, -1.522, Math.PI]}>
-                    <mesh name="Tree155_Wood_2_0" geometry={nodes.Tree155_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree155_Tree_1_0" geometry={nodes.Tree155_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree155_Snow_0" geometry={nodes.Tree155_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree155_Tree_1_0" geometry={nodes.Tree155_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree155_Wood_2_0" geometry={nodes.Tree155_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree156" position={[-7.212, 1.104, -2.912]} rotation={[0, -0.968, 0]}>
                     <mesh name="Tree156_Snow_0" geometry={nodes.Tree156_Snow_0.geometry} material={materials.Snow} />
@@ -1261,9 +1264,9 @@ export function Island2({
                     <mesh name="Tree16_Wood_2_0" geometry={nodes.Tree16_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree160" position={[0.375, 0, -28.619]} rotation={[Math.PI, -0.902, Math.PI]}>
-                    <mesh name="Tree160_Wood_2_0" geometry={nodes.Tree160_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree160_Tree_1_0" geometry={nodes.Tree160_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree160_Snow_0" geometry={nodes.Tree160_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree160_Tree_1_0" geometry={nodes.Tree160_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree160_Wood_2_0" geometry={nodes.Tree160_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree161" position={[1.232, 0, 3.433]} rotation={[0, -0.395, 0]}>
                     <mesh name="Tree161_Snow_0" geometry={nodes.Tree161_Snow_0.geometry} material={materials.Snow} />
@@ -1271,13 +1274,13 @@ export function Island2({
                     <mesh name="Tree161_Wood_2_0" geometry={nodes.Tree161_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree162" position={[-6.945, 0, -10.927]} rotation={[0, -1.128, 0]}>
-                    <mesh name="Tree162_Tree_1_0" geometry={nodes.Tree162_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree162_Snow_0" geometry={nodes.Tree162_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree162_Tree_1_0" geometry={nodes.Tree162_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree162_Wood_2_0" geometry={nodes.Tree162_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree163" position={[16.534, 0, 13.715]} rotation={[0, 0.257, 0]}>
-                    <mesh name="Tree163_Tree_1_0" geometry={nodes.Tree163_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree163_Snow_0" geometry={nodes.Tree163_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree163_Tree_1_0" geometry={nodes.Tree163_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree163_Wood_2_0" geometry={nodes.Tree163_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree164" position={[-2.625, -0.413, -3.873]} rotation={[0, 0.63, 0]}>
@@ -1296,8 +1299,8 @@ export function Island2({
                     <mesh name="Tree168_Wood_2_0" geometry={nodes.Tree168_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree17" position={[14.963, 1.303, -11.644]} rotation={[0, 1.363, 0]}>
-                    <mesh name="Tree17_Tree_1_0" geometry={nodes.Tree17_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree17_Snow_0" geometry={nodes.Tree17_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree17_Tree_1_0" geometry={nodes.Tree17_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree17_Wood_2_0" geometry={nodes.Tree17_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree170" position={[1.041, 0.809, -8.19]} rotation={[0, 1.552, 0]}>
@@ -1341,13 +1344,13 @@ export function Island2({
                     <mesh name="Tree18_Wood_2_0" geometry={nodes.Tree18_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree19" position={[13.783, 0.437, -8.865]} rotation={[0, 1.363, 0]}>
-                    <mesh name="Tree19_Wood_2_0" geometry={nodes.Tree19_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree19_Tree_1_0" geometry={nodes.Tree19_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree19_Snow_0" geometry={nodes.Tree19_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree19_Tree_1_0" geometry={nodes.Tree19_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree19_Wood_2_0" geometry={nodes.Tree19_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree21" position={[17.424, 0.253, -21.856]} rotation={[-Math.PI, 1.146, -Math.PI]}>
-                    <mesh name="Tree21_Tree_1_0" geometry={nodes.Tree21_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree21_Snow_0" geometry={nodes.Tree21_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree21_Tree_1_0" geometry={nodes.Tree21_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree21_Wood_2_0" geometry={nodes.Tree21_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree22" position={[-0.982, -0.839, 4.343]}>
@@ -1356,9 +1359,9 @@ export function Island2({
                     <mesh name="Tree22_Wood_2_0" geometry={nodes.Tree22_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree227" position={[17.507, 0.31, -34.008]} rotation={[-Math.PI, 0.788, -Math.PI]}>
-                    <mesh name="Tree227_Wood_2_0" geometry={nodes.Tree227_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree227_Tree_1_0" geometry={nodes.Tree227_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree227_Snow_0" geometry={nodes.Tree227_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree227_Tree_1_0" geometry={nodes.Tree227_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree227_Wood_2_0" geometry={nodes.Tree227_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree23" position={[0.175, -0.407, 6.414]}>
                     <mesh name="Tree23_Snow_0" geometry={nodes.Tree23_Snow_0.geometry} material={materials.Snow} />
@@ -1521,9 +1524,9 @@ export function Island2({
                     <mesh name="Tree288_Wood_2_0" geometry={nodes.Tree288_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree29" position={[9.627, -0.139, -18.367]} rotation={[-Math.PI, 0.858, -Math.PI]}>
-                    <mesh name="Tree29_Wood_2_0" geometry={nodes.Tree29_Wood_2_0.geometry} material={materials.Wood_2} />
-                    <mesh name="Tree29_Tree_1_0" geometry={nodes.Tree29_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree29_Snow_0" geometry={nodes.Tree29_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree29_Tree_1_0" geometry={nodes.Tree29_Tree_1_0.geometry} material={materials.Tree_1} />
+                    <mesh name="Tree29_Wood_2_0" geometry={nodes.Tree29_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree294" position={[-3.348, -0.171, -3.255]} rotation={[0, 1.552, 0]}>
                     <mesh name="Tree294_Snow_0" geometry={nodes.Tree294_Snow_0.geometry} material={materials.Snow} />
@@ -1576,8 +1579,8 @@ export function Island2({
                     <mesh name="Tree306_Wood_2_0" geometry={nodes.Tree306_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree307" position={[-0.576, 0.315, -7.252]} rotation={[0, -1.128, 0]}>
-                    <mesh name="Tree307_Tree_1_0" geometry={nodes.Tree307_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree307_Snow_0" geometry={nodes.Tree307_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree307_Tree_1_0" geometry={nodes.Tree307_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree307_Wood_2_0" geometry={nodes.Tree307_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree309" position={[11.331, 0, -34.249]} rotation={[Math.PI, -0.902, Math.PI]}>
@@ -1591,13 +1594,13 @@ export function Island2({
                     <mesh name="Tree31_Wood_2_0" geometry={nodes.Tree31_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree310" position={[10.35, 0, -30.276]} rotation={[Math.PI, -0.789, Math.PI]}>
-                    <mesh name="Tree310_Tree_1_0" geometry={nodes.Tree310_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree310_Snow_0" geometry={nodes.Tree310_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree310_Tree_1_0" geometry={nodes.Tree310_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree310_Wood_2_0" geometry={nodes.Tree310_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree311" position={[23.45, 0.253, 18.832]} rotation={[0, 0.257, 0]}>
-                    <mesh name="Tree311_Tree_1_0" geometry={nodes.Tree311_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree311_Snow_0" geometry={nodes.Tree311_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree311_Tree_1_0" geometry={nodes.Tree311_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree311_Wood_2_0" geometry={nodes.Tree311_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree33" position={[-0.025, 0.342, -3.323]} rotation={[0, 1.552, 0]}>
@@ -1791,8 +1794,8 @@ export function Island2({
                     <mesh name="Tree89_Wood_2_0" geometry={nodes.Tree89_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree9">
-                    <mesh name="Tree9_Tree_1_0" geometry={nodes.Tree9_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree9_Snow_0" geometry={nodes.Tree9_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree9_Tree_1_0" geometry={nodes.Tree9_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree9_Wood_2_0" geometry={nodes.Tree9_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree93" position={[3.474, 0.664, -7.44]} rotation={[0, 1.552, 0]}>
@@ -1801,8 +1804,8 @@ export function Island2({
                     <mesh name="Tree93_Wood_2_0" geometry={nodes.Tree93_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                   <group name="Tree99" position={[4.626, 0.512, -2.448]} rotation={[0, 1.363, 0]}>
-                    <mesh name="Tree99_Tree_1_0" geometry={nodes.Tree99_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree99_Snow_0" geometry={nodes.Tree99_Snow_0.geometry} material={materials.Snow} />
+                    <mesh name="Tree99_Tree_1_0" geometry={nodes.Tree99_Tree_1_0.geometry} material={materials.Tree_1} />
                     <mesh name="Tree99_Wood_2_0" geometry={nodes.Tree99_Wood_2_0.geometry} material={materials.Wood_2} />
                   </group>
                 </group>
@@ -1810,17 +1813,140 @@ export function Island2({
             </group>
           </group>
         </group>
+        <group name="3b06556c784d4ed4b17bcfc12c15f331fbx" rotation={[Math.PI / 2, 0, 0]} />
+        <group name="bucket2" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
         <group name="centre_cylinder" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="75cd1960652249f08e91141b4e673d48fbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="RootNode001">
+              <group name="pCube179" scale={0.01} />
+              <group name="pCube248" scale={0.01} />
+              <group name="pCube26" scale={0.01} />
+              <group name="pCube300" scale={0.01} />
+              <group name="pCylinder20" scale={0.01} />
+              <group name="pCylinder58" scale={0.01} />
               <group name="pDisc2" scale={0.01}>
                 <mesh name="pDisc2_lambert2_0" geometry={nodes.pDisc2_lambert2_0.geometry} material={materials.lambert2} position={[-12.7, -4.84, 18.47]} scale={2} />
               </group>
+              <group name="polySurface1739" scale={0.01} />
+              <group name="polySurface1758" scale={0.01} />
+              <group name="polySurface1769" scale={0.01} />
+              <group name="polySurface1771" scale={0.01} />
+              <group name="polySurface1789" scale={0.01} />
+              <group name="polySurface1791" scale={0.01} />
+              <group name="polySurface2067" scale={0.01}>
+                <group name="polySurface2218" position={[0.302, 0, -0.213]} />
+              </group>
+              <group name="polySurface2407" scale={0.01} />
+              <group name="polySurface2486" scale={0.01} />
+              <group name="polySurface2534" scale={0.01} />
+              <group name="polySurface2572" scale={0.01} />
+              <group name="polySurface2594" position={[0, 0.005, 0.002]} rotation={[-0.021, 0.002, -0.006]} scale={0.01} />
+              <group name="polySurface2598" scale={0.01} />
+              <group name="polySurface280" scale={0.01} />
+              <group name="polySurface2811" position={[0, -0.001, 0]} scale={0.01} />
+              <group name="polySurface2903" scale={0.01} />
+              <group name="polySurface542" scale={0.01} />
+              <group name="polySurface579" scale={0.01}>
+                <group name="polySurface1790" />
+              </group>
+              <group name="polySurface882" scale={0.01} />
+              <group name="pPlane4" scale={0.01}>
+                <group name="polySurface878" position={[0, -0.012, 0]} />
+                <group name="polySurface879" />
+              </group>
+            </group>
+          </group>
+        </group>
+        <group name="chair" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="modelfbx" rotation={[Math.PI, 0, 0]}>
+            <group name="RootNode005">
+              <group name="model001" />
+            </group>
+          </group>
+        </group>
+        <group name="Empty" position={[-0.022, 0.053, -0.612]} rotation={[1.575, -0.039, 2.232]} scale={0.001} />
+        <group name="pCylinder1" position={[0, 0.574, 0.011]} rotation={[0.152, 0, 0]} scale={0.038} />
+        <group name="pCylinder2" position={[0, 0.571, 0.011]} rotation={[0.152, 0, 0]} scale={0.037} />
+        <group name="polySurface287001" position={[-0.159, 0.362, -0.142]} rotation={[-3.138, -1.476, -Math.PI]} scale={[0.02, 0.015, 0.01]} />
+        <group name="polySurface289001" position={[-0.159, 0.362, -0.142]} rotation={[-3.138, -1.476, -Math.PI]} scale={[0.02, 0.015, 0.01]} />
+        <group name="polySurface451002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface452002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface453002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface454002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface455002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface456002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface457002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface458002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface459002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface460002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface461002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface462002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface463002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface464002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface465002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface466002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface467002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface468002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface469002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface470002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="polySurface471002" position={[-0.089, 0.35, -0.025]} rotation={[2.86, -1.088, -0.732]} scale={0.01} />
+        <group name="Sketchfab_model001" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="38575791c9ea45829a20597652646555fbx" rotation={[Math.PI / 2, 0, 0]}>
+            <group name="RootNode002">
+              <group name="model_pack_02" rotation={[-Math.PI / 2, 0, 0]} />
+            </group>
+          </group>
+        </group>
+        <group name="Sketchfab_model002" rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
+          <group name="7f085f867b61422cab2da24b7161a7feobjcleanergles" />
+        </group>
+        <group name="Sketchfab_model003" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="7b027088e14a438895313da217380f68fbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+            <group name="RootNode003">
+              <group name="Cube" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
+            </group>
+          </group>
+        </group>
+        <group name="Sketchfab_model004" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="Collada_visual_scene_group">
+            <group name="model" />
+          </group>
+        </group>
+        <group name="Sketchfab_model005" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="8eaf0caa7310477a81c442071a7d0c89fbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+            <group name="RootNode004" />
+          </group>
+        </group>
+        <group name="Sketchfab_model006" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="df109a9a0dd14e71b7ea1b83cdc2e51bfbx" rotation={[Math.PI / 2, 0, 0]}>
+            <group name="RootNode006" />
+          </group>
+        </group>
+        <group name="Sketchfab_model007" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="DIETANNEobjcleanermaterialmergergles" />
+        </group>
+        <group name="Sketchfab_model008" rotation={[-Math.PI / 2, 0, 0]}>
+          <group name="Root">
+            <group name="BANCA" position={[0, 0.78, 0.397]} scale={[1.5, 0.025, 0.025]} />
+            <group name="Lamp001" position={[4.076, 1.005, 5.904]} rotation={[-0.268, 0.602, 1.931]}>
+              <group name="Lamp002" />
+            </group>
+          </group>
+        </group>
+        <group name="Circle001" position={[-0.029, 2.226, 0.011]} rotation={[-1.586, 0.05, -0.131]} scale={[0.378, 0.378, 0.504]} />
+        <group name="Sketchfab_model009" rotation={[-Math.PI / 2, 0, 0]} scale={1.196}>
+          <group name="8089c798d0bf4502951e26a1939000a9fbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+            <group name="RootNode007">
+              <group name="Circle005" position={[-2.41, 180.504, 0.903]} rotation={[-1.586, 0.05, -0.131]} scale={[33.352, 33.332, 44.43]} />
+              <group name="Cube001" position={[0, 23.267, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={10.781} />
             </group>
           </group>
         </group>
         <group name="Centre_tree" position={[0.027, 0.113, -0.124]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
           <group name="Root001">
+            <group name="Lamp003" position={[7.269, 2.237, 10.384]} rotation={[-0.268, 0.602, 1.931]}>
+              <group name="Lamp004" />
+            </group>
             <group name="main_tree" scale={0.168}>
               <group name="Plane_1" position={[-18.885, -23.545, -0.046]} scale={0.5}>
                 <mesh name="Plane_1_1" geometry={nodes.Plane_1_1.geometry} material={materials['Material.008']} />
@@ -1832,6 +1958,29 @@ export function Island2({
         <group name="Lattice001" position={[-0.312, 0.149, 0.272]} rotation={[0, -0.873, 0]} scale={0.4}>
           <mesh name="g" geometry={nodes.g.geometry} material={materials['Material.003']} rotation={[Math.PI / 2, 0, 0]} scale={[1, 1, 2.157]} />
         </group>
+        <group name="Sketchfab_model011" position={[-0.039, 0.184, -0.178]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root002">
+            <group name="Plane001" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree001" position={[0.121, 0.12, -0.1]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root003">
+            <group name="main_tree001" scale={0.168} />
+          </group>
+        </group>
+        <group name="Sketchfab_model010" position={[0.077, 0.117, -0.159]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="536d5e8fa83a40a8a2c8b9e4662ed387fbx001" rotation={[Math.PI / 2, 0, 0]}>
+            <group name="Object_2001">
+              <group name="RootNode008">
+                <group name="Main_Chrimah_Tree001" position={[27.308, 0.14, 19.148]} rotation={[0, 1.363, 0]} scale={1.48}>
+                  <group name="Bulbs001" position={[8.614, 0.34, -17.979]} rotation={[0, -0.765, 0]} scale={0.216}>
+                    <group name="polySurface212001" position={[-2.212, -0.707, -14.839]} rotation={[2.908, 0.503, 1.995]} />
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
         <group name="Centre_tree002" position={[0.105, 0.13, -0.283]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
           <group name="Root004">
             <group name="main_tree002" scale={0.168}>
@@ -1840,6 +1989,36 @@ export function Island2({
                 <mesh name="Plane_1002_2" geometry={nodes.Plane_1002_2.geometry} material={materials['Material.029']} />
               </group>
             </group>
+          </group>
+        </group>
+        <group name="Centre_tree003" position={[0.277, 0.12, 0.123]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root005">
+            <group name="main_tree003" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree004" position={[0.326, 0.121, 0.07]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root006">
+            <group name="main_tree004" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree005" position={[0.293, 0.12, 0.14]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root007">
+            <group name="main_tree005" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree006" position={[0.365, 0.114, 0.136]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root008">
+            <group name="main_tree006" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree007" position={[0.338, 0.11, 0.237]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root009">
+            <group name="main_tree007" scale={0.168} />
+          </group>
+        </group>
+        <group name="Centre_tree008" position={[0.341, 0.113, 0.231]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root010">
+            <group name="main_tree008" scale={0.168} />
           </group>
         </group>
         <group name="Centre_tree009" position={[-0.018, 0.114, -0.193]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
@@ -1910,6 +2089,11 @@ export function Island2({
                 <mesh name="Plane_1015_2" geometry={nodes.Plane_1015_2.geometry} material={materials['Material.055']} />
               </group>
             </group>
+          </group>
+        </group>
+        <group name="Centre_tree016" position={[0.013, 0.119, -0.234]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
+          <group name="Root018">
+            <group name="main_tree016" scale={0.168} />
           </group>
         </group>
         <group name="Centre_tree017" position={[0.126, 0.119, -0.129]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
@@ -1985,7 +2169,7 @@ export function Island2({
         <group name="Centre_tree024" position={[-0.055, 0.117, 0.006]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
           <group name="Root026">
             <group name="main_tree024" scale={0.168}>
-              <group name="Plane_1006" position={[-23.863, -7.557, -0.981]} scale={0.5}>
+              <group name="Plane_1006_2" position={[-23.863, -7.557, -0.981]} scale={0.5}>
                 <mesh name="Plane_1001_1" geometry={nodes.Plane_1001_1.geometry} material={materials['Material.072']} />
                 <mesh name="Plane_1001_2" geometry={nodes.Plane_1001_2.geometry} material={materials['Material.073']} />
               </group>
@@ -2022,6 +2206,9 @@ export function Island2({
             </group>
           </group>
         </group>
+        <group name="Root030" position={[0.114, 0.12, -0.194]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05} />
+        <group name="main_tree028" position={[0.114, 0.12, -0.194]} rotation={[-Math.PI / 2, 0, 0]} scale={0.008} />
+        <group name="Centre_tree028" position={[0.114, 0.12, -0.194]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05} />
         <group name="Centre_tree029" position={[0.17, 0.123, -0.378]} rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
           <group name="Root031">
             <group name="main_tree029" scale={0.168}>
@@ -2327,13 +2514,6 @@ export function Island2({
         <mesh name="stone019" geometry={nodes.stone019.geometry} material={materials['Material.024']} position={[0.046, 0.109, -0.314]} rotation={[-Math.PI / 2, 0, 0]} scale={0.005} />
         <mesh name="stone020" geometry={nodes.stone020.geometry} material={materials['Material.025']} position={[-0.115, 0.111, -0.004]} rotation={[-Math.PI / 2, 0, 0]} scale={0.005} />
         <mesh name="Tent1_tent_0" geometry={nodes.Tent1_tent_0.geometry} material={materials.tent} position={[-0.351, 0.142, -0.075]} rotation={[Math.PI, -1.491, Math.PI]} scale={0.005} />
-        <mesh name="U3DMesh003_grass01003_0011" geometry={nodes.U3DMesh003_grass01003_0011.geometry} material={materials['grass01.100']} position={[-0.032, 0.122, -0.117]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0012" geometry={nodes.U3DMesh003_grass01003_0012.geometry} material={materials['grass01.101']} position={[0.008, 0.114, -0.159]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0033" geometry={nodes.U3DMesh003_grass01003_0033.geometry} material={materials['grass01.041']} position={[-0.1, 0.118, -0.058]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0045" geometry={nodes.U3DMesh003_grass01003_0045.geometry} material={materials['grass01.001']} position={[-0.063, 0.117, -0.062]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0046" geometry={nodes.U3DMesh003_grass01003_0046.geometry} material={materials['grass01.002']} position={[-0.019, 0.11, -0.012]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0047" geometry={nodes.U3DMesh003_grass01003_0047.geometry} material={materials['grass01.003']} position={[-0.02, 0.109, -0.065]} scale={0.0001,0.0001,0.0001} />
-        <mesh name="U3DMesh003_grass01003_0048" geometry={nodes.U3DMesh003_grass01003_0048.geometry} material={materials['grass01.004']} position={[0.02, 0.111, -0.02]} scale={0.0001,0.0001,0.0001} />
         <group name="U3DMesh003_grass01003_0003" position={[0.139, 0.108, -0.197]} scale={0.0001,0.0001,0.0001}>
           <mesh name="U3DMesh003_grass01003_0052_1" geometry={nodes.U3DMesh003_grass01003_0052_1.geometry} material={materials['grass01.060']} />
           <mesh name="U3DMesh003_grass01003_0052_2" geometry={nodes.U3DMesh003_grass01003_0052_2.geometry} material={materials['grass01.061']} />
@@ -2362,6 +2542,8 @@ export function Island2({
           <mesh name="U3DMesh003_grass01003_0059_4" geometry={nodes.U3DMesh003_grass01003_0059_4.geometry} material={materials['grass01.098']} />
           <mesh name="U3DMesh003_grass01003_0059_5" geometry={nodes.U3DMesh003_grass01003_0059_5.geometry} material={materials['grass01.099']} />
         </group>
+        <mesh name="U3DMesh003_grass01003_0011" geometry={nodes.U3DMesh003_grass01003_0011.geometry} material={materials['grass01.100']} position={[-0.032, 0.122, -0.117]} scale={0.0001,0.0001,0.0001} />
+        <mesh name="U3DMesh003_grass01003_0012" geometry={nodes.U3DMesh003_grass01003_0012.geometry} material={materials['grass01.101']} position={[0.008, 0.114, -0.159]} scale={0.0001,0.0001,0.0001} />
         <group name="U3DMesh003_grass01003_0013" position={[-0.156, 0.11, 0.092]} scale={0.0001,0.0001,0.0001}>
           <mesh name="U3DMesh003_grass01003_0062" geometry={nodes.U3DMesh003_grass01003_0062.geometry} material={materials['grass01.102']} />
           <mesh name="U3DMesh003_grass01003_0062_1" geometry={nodes.U3DMesh003_grass01003_0062_1.geometry} material={materials['grass01.103']} />
@@ -2446,6 +2628,7 @@ export function Island2({
           <mesh name="U3DMesh003_grass01003_0081_3" geometry={nodes.U3DMesh003_grass01003_0081_3.geometry} material={materials['grass01.200']} />
           <mesh name="U3DMesh003_grass01003_0081_4" geometry={nodes.U3DMesh003_grass01003_0081_4.geometry} material={materials['grass01.201']} />
         </group>
+        <mesh name="U3DMesh003_grass01003_0033" geometry={nodes.U3DMesh003_grass01003_0033.geometry} material={materials['grass01.041']} position={[-0.1, 0.118, -0.058]} scale={0.0001,0.0001,0.0001} />
         <group name="U3DMesh003_grass01003_0034" position={[-0.251, 0.112, -0.197]} scale={0.0001,0.0001,0.0001}>
           <mesh name="U3DMesh003_grass01003_0082" geometry={nodes.U3DMesh003_grass01003_0082.geometry} material={materials['grass01.202']} />
           <mesh name="U3DMesh003_grass01003_0082_1" geometry={nodes.U3DMesh003_grass01003_0082_1.geometry} material={materials['grass01.203']} />
@@ -2460,6 +2643,10 @@ export function Island2({
           <mesh name="U3DMesh003_grass01003_0086_3" geometry={nodes.U3DMesh003_grass01003_0086_3.geometry} material={materials['grass01.225']} />
           <mesh name="U3DMesh003_grass01003_0086_4" geometry={nodes.U3DMesh003_grass01003_0086_4.geometry} material={materials['grass01.226']} />
         </group>
+        <mesh name="U3DMesh003_grass01003_0045" geometry={nodes.U3DMesh003_grass01003_0045.geometry} material={materials['grass01.001']} position={[-0.063, 0.117, -0.062]} scale={0.0001,0.0001,0.0001} />
+        <mesh name="U3DMesh003_grass01003_0046" geometry={nodes.U3DMesh003_grass01003_0046.geometry} material={materials['grass01.002']} position={[-0.019, 0.11, -0.012]} scale={0.0001,0.0001,0.0001} />
+        <mesh name="U3DMesh003_grass01003_0047" geometry={nodes.U3DMesh003_grass01003_0047.geometry} material={materials['grass01.003']} position={[-0.02, 0.109, -0.065]} scale={0.0001,0.0001,0.0001} />
+        <mesh name="U3DMesh003_grass01003_0048" geometry={nodes.U3DMesh003_grass01003_0048.geometry} material={materials['grass01.004']} position={[0.02, 0.111, -0.02]} scale={0.0001,0.0001,0.0001} />
         <mesh name="BANCA_0" geometry={nodes.BANCA_0.geometry} material={materials['Material.001']} position={[0.341, 0.126, -0.092]} rotation={[1.558, 0.087, -0.72]} scale={[-0.035, -0.001, -0.001]} />
         <group name="U3DMesh003_grass01003_0042" position={[0.171, 0.109, -0.333]} scale={0.0001,0.0001,0.0001}>
           <mesh name="U3DMesh003_grass01003_0002" geometry={nodes.U3DMesh003_grass01003_0002.geometry} material={materials['grass01.013']} />
@@ -2575,12 +2762,12 @@ export function Island2({
           <mesh name="U3DMesh003_grass01003_0032_5" geometry={nodes.U3DMesh003_grass01003_0032_5.geometry} material={materials['grass01.352']} />
         </group>
         <group name="Plane_1021" position={[0.198, 0.103, -0.338]} rotation={[-Math.PI / 2, 0, 0]} scale={0.004}>
-          <mesh name="Plane_1006_1" geometry={nodes.Plane_1006_1.geometry} material={materials['Material.080']} />
-          <mesh name="Plane_1006_2" geometry={nodes.Plane_1006_2.geometry} material={materials['Material.081']} />
+          <mesh name="Plane_1006" geometry={nodes.Plane_1006.geometry} material={materials['Material.080']} />
+          <mesh name="Plane_1006_1" geometry={nodes.Plane_1006_1.geometry} material={materials['Material.081']} />
         </group>
       </group>
     </group>
   )
 }
 
-useGLTF.preload('/island2-v1.glb')
+useGLTF.preload('/island2.glb')
