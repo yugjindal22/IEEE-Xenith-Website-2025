@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
+import { sendForm } from '@emailjs/browser';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -8,13 +9,27 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
 
+  const formRef = useRef(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage('');
 
+    // Send the form data to your email service
+    try {
+      await sendForm('service_mlcdhfm', 'template_5mf5u7e', formRef.current, import.meta.env.VITE_EMAILJS_USER_ID);
+    } catch (error) {
+      console.error('Failed to send the form:', error);
+      setIsSubmitting(false);
+      setSubmitMessage('Failed to send the form. Please try again later.');
+      return;
+    }
+
+    
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // await new Promise(resolve => setTimeout(resolve, 2000));
+
 
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', { name, email, message });
@@ -31,18 +46,6 @@ const Contact = () => {
       <div className="contact-info">
         <h2>Contact Us</h2>
         <p>We'd love to hear from you. Feel free to get in touch with us using the form or our contact information below.</p>
-        {/* <div className="info-item">
-          <i className="fas fa-map-marker-alt"></i>
-          <span>123 Main St, Anytown, USA 12345</span>
-        </div>
-        <div className="info-item">
-          <i className="fas fa-phone"></i>
-          <span>+1 (555) 123-4567</span>
-        </div>
-        <div className="info-item">
-          <i className="fas fa-envelope"></i>
-          <span>contact@example.com</span>
-        </div> */}
         <div className="social-links">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <i className="fab fa-facebook"></i>
@@ -57,12 +60,13 @@ const Contact = () => {
       </div>
       <div className="contact-form-container">
         <h3>Send us a message</h3>
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} ref={formRef} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
+              name='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -73,6 +77,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -82,6 +87,7 @@ const Contact = () => {
             <label htmlFor="message">Message:</label>
             <textarea
               id="message"
+              name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
