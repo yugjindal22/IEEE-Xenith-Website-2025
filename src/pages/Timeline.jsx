@@ -37,7 +37,7 @@ const Timeline = () => {
       date: "Feb 1st to 2nd 2025",
       time: "XX:00 PM",
       description: "Coming Soon",
-      location: "JIIT"
+      location: "Venue : JIIT"
     },
 
   ];
