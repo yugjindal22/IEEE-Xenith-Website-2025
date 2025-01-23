@@ -1,7 +1,8 @@
 
 import {
     contact,
-    github,
+    facebook,
+    instagram,
     linkedin
 } from "../assets/icons";
 
@@ -13,14 +14,20 @@ export const socialLinks = [
         iconUrl: contact,
         link: '/contact',
     },
+
     {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/githubid',
+        name: 'Facebook',
+        iconUrl: facebook,
+        link: 'https://www.facebook.com/ieeesbjiit',
+    },
+    {
+        name: 'Instagram',
+        iconUrl: instagram,
+        link: 'https://www.instagram.com/ieeesbjiit',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/linkedinidofieee',
+        link: 'https://www.linkedin.com/company/ieee-student-branch-jiit/',
     }
 ];

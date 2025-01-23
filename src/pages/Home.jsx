@@ -190,7 +190,7 @@ const Home = () => {
   return (
     <section className='w-full h-screen relative' 
       style={{
-        backgroundImage: 'url("/Home.png")',
+        backgroundImage: 'url("/Home.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -211,7 +211,7 @@ const Home = () => {
           max-w-3xl
           leading-tight
         ">
-          Some Yapping About Xenith.....
+          Welcome To The Shard Of Frost
         </h1>
         <div className="
           w-full max-w-md 
@@ -237,7 +237,7 @@ const Home = () => {
         style={{ background: 'transparent' }}
       >
         <LoadingManager />
-        <Bird />
+       <Bird />
         <Plane
             isRotating={isRotating}
             position={biplanePosition}
@@ -267,7 +267,7 @@ const Home = () => {
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
             position={islandPosition}
-            rotation={[0.1, 4.7077, 0]} // Updated initial rotation to match new minimum height
+            rotation={[0.1, 95.1, 0]} // Updated initial rotation to match new minimum height
             scale={islandScale}
           />
           <SnowParticles />
