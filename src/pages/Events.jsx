@@ -51,9 +51,9 @@ const Events = () => {
                  
                   <img className="overlay" src={frozen2} alt="overlay" />
                
-                <h2 className="poster-title">HACKSTREET 2.0</h2>
-                <h3 className="poster-date">4th Feb 2025</h3>
-                <button className="event-button">Register</button>
+                <h2 className="poster-title">Coming Soon</h2>
+                <h3 className="poster-date">1st-2nd Feb 2025</h3>
+                {/*<button className="event-button">Register</button>*/}
               </div>
             ))}
         </div>
