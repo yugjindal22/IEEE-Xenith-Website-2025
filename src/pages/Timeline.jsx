@@ -5,39 +5,39 @@ import Snowfall from 'react-snowfall';
 const Timeline = () => {
   const events = [
     {
-      title: "Opening Ceremony",
-      date: "Feb 1, 2025",
-      time: "10:00 AM",
-      description: "Welcome to Xenith'25 - Embark on a journey through the Shards of Frost",
-      location: "Auditorium"
+      title: "Coming Soon",
+      date: "Feb 1st to 2nd 2025",
+      time: "XX:00 PM",
+      description: "Coming Soon",
+      location: "JIIT"
     },
     {
-      title: "Event 2",
-      date: "Feb XX, 2025",
+      title: "Coming Soon",
+      date: "Feb 1st to 2nd 2025",
       time: "XX:00 PM",
-      description: "Description",
-      location: "Venue"
+      description: "Coming Soon",
+      location: "JIIT"
     },
     {
-      title: "Event 3",
-      date: "Feb XX, 2025",
+      title: "Coming Soon",
+      date: "Feb 1st to 2nd 2025",
       time: "XX:00 PM",
-      description: "Description",
-      location: "Venue"
+      description: "Coming Soon",
+      location: "JIIT"
     },
     {
-      title: "Event 4",
-      date: "Feb XX, 2025",
+      title: "Coming Soon",
+      date: "Feb 1st to 2nd 2025",
       time: "XX:00 PM",
-      description: "Description",
-      location: "Venue"
+      description: "Coming Soon",
+      location: "JIIT"
     },
     {
-      title: "Event 5",
-      date: "Feb XX, 2025",
+      title: "Coming Soon",
+      date: "Feb 1st to 2nd 2025",
       time: "XX:00 PM",
-      description: "Description",
-      location: "Venue"
+      description: "Coming Soon",
+      location: "JIIT"
     },
 
   ];
