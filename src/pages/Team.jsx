@@ -122,7 +122,7 @@ function TeamSection() {
                                 </div>
                                 <div className="team-row">
                                     <div className="team-member-card wave-animation" style={{ '--i': 12 }}>
-                                        <img src="core_images\muskan.png" alt="Team member 12" className="team-member-image" />
+                                        <img src="core_images\muskanasthana.jpeg" alt="Team member 12" className="team-member-image" />
                                         <div className="team-member-info">
                                             <h3 className="team-member-name">Muskan<br />Asthana</h3>
                                             <p className="team-member-position">Marketing<br />Head</p>
